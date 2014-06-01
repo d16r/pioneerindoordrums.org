@@ -22,19 +22,21 @@
                     <input type="text" class="form-control" placeholder="City" ng-model="audition.city" />
                 </div>
                 <div class="col-md-7">
-                    <input type="text" class="form-control" placeholder="State" ng-model="audition.state" />
+                    <select class="form-control" ng-model="audition.state" ng-options="state for state in states" >
+                    </select>
                 </div>
             </div><br>
 
             <div class="row">
                 <div class="col-md-12">
-                    <input type="text" class="form-control" placeholder="Instrument(s)" ng-model="audition.instruments" required />
+                    <select multiple class="form-control" ng-model="audition.instruments" ng-options="instrument for instrument in instruments" required>
+                    </select>
                 </div>
             </div><br>
 
             <div class="row">
                 <div class="col-md-12">
-                    <textarea class="form-control" placeholder="Special talents (Juggling,Unicycle,Flips..)" ng-model="audition.specialTalents" />
+                    <textarea rows="4" class="form-control" placeholder="Special talents (Juggling,Unicycle,Flips..)" ng-model="audition.specialTalents" />
                 </div>
             </div><br>
 

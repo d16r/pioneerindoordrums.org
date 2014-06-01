@@ -12,6 +12,12 @@ angular
       .when('/', {
         templateUrl: 'views/main.html'
       })
+      .when('/faqs', {
+        templateUrl: 'views/faqs.html'
+      })
+      .when('/history', {
+        templateUrl: 'views/history.html'
+      })
       .when('/about', {
         templateUrl: 'views/about.html'
       })
