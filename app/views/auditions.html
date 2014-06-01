@@ -3,33 +3,10 @@
         color:#2a6496;
     }
 </style>
-<div class="row">
-    <h1>Audition Information</h1>
-    <div class="col-md-6">
-        <h4>When is it?</h4>
-        <p>November 9th, 2014. 8:30am-7pm</p>
-        <h4>Where is it?</h4>
-        <p>Romeoville High School</p>
-        <h4>What should I bring?</h4>
-        <ul>
-            <li>$30 (Audition Fee)</li>
-            <li>Sticks/Mallets</li>
-            <li>Audition Music</li>
-            <li>Comfortable clothing.</li>
-        </ul>
-    </div>
-    <div class="col-md-6">
-        <h4>When are rehearsals?</h4>
-        <p>Rehearsals are pretty much every Saturday during the season. We also have Friday night sectionals, but those are week-to-week. <strong>You are expected to be at every rehearsal, pending a family emergency.</strong></p>
-        <h4>How much does it cost?</h4>
-        <p>Psh, I don't know...like, 50?</p>
-        <h4>Can I be in high school?</h4>
-        <p>Oh yes, especially if you goto Romeoville High School.</p>
-    </div>
-</div>
 
 <div class="row" ng-controller="AuditionCtrl">
-    <h1>Register</h1>
+    <div class="col-md-8 col-md-offset-3">
+        <h1>Register</h1>
         <form novalidate ng-submit="submitAuditionForm()" name="form">
             <div class="row">
                 <div class="col-md-3">
@@ -69,11 +46,35 @@
 
             <input type="submit" class="btn btn-lg" />
         </form>
-
         {{ audition }}
+    </div>
+</div><br><br>
+
+<div class="row">
+    <h1>Audition Information</h1>
+    <div class="col-md-6">
+        <h4>When is it?</h4>
+        <p>November 9th, 2014. 8:30am-7pm</p>
+        <h4>Where is it?</h4>
+        <p>Romeoville High School</p>
+        <h4>What should I bring?</h4>
+        <ul>
+            <li>$30 (Audition Fee)</li>
+            <li>Sticks/Mallets</li>
+            <li>Audition Music</li>
+            <li>Comfortable clothing.</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h4>When are rehearsals?</h4>
+        <p>Rehearsals are pretty much every Saturday during the season. We also have Friday night sectionals, but those are week-to-week. <strong>You are expected to be at every rehearsal, pending a family emergency.</strong></p>
+        <h4>How much does it cost?</h4>
+        <p>Psh, I don't know...like, 50?</p>
+        <h4>Can I be in high school?</h4>
+        <p>Oh yes, especially if you goto Romeoville High School.</p>
+    </div>
 </div>
 
-<br><br>
 <div class="row">
     <div class="col-md-12">
         <a href="http://pioneerindoordrums.org/uploads/PIO_Technique_Exercises_12.pdf">Battery Audition Packet</a>
