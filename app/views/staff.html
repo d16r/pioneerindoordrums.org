@@ -1,5 +1,13 @@
 <div ng-controller="StaffCtrl">
-    <div class="row" ng-repeat="member in staffMembers">
+    <ul class="nav nav-pills pull-right">
+        <li ng-repeat="section in sections" ng-class="{'active':search.tags === section}">
+            <a href="" ng-click="highlightFilterIcon(section)">
+                <span ng-show="search.tags === section" class="glyphicon glyphicon-remove" /> {{ section }}
+            </a>
+        </li>
+    </ul>
+
+    <div class="row" ng-repeat="member in staffMembers | filter:search:strict">
         <h3>{{ member.name }}</h3>
         <h4>{{ member.position }}</h4>
         <div class="row">

@@ -4,6 +4,11 @@ angular.module('pioApp')
   .controller('ContactCtrl', function ($scope) {
   })
   .controller('StaffCtrl', function ($scope) {
+    $scope.search = {};
+    $scope.highlightFilterIcon = function(section) {
+        $scope.search.tags = $scope.search.tags === section ? '' : section;
+    };
+    $scope.sections = ['Design Staff', 'Visual', 'Battery', 'Front Ensemble'];
     $scope.staffMembers = [
         {
             name: 'Adam Hill',
