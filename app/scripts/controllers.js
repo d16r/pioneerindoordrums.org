@@ -2,11 +2,6 @@
 
 angular.module('pioApp')
   .controller('ContactCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
   })
   .controller('StaffCtrl', function ($scope) {
     $scope.staffMembers = [
