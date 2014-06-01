@@ -16,6 +16,9 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html'
       })
+      .when('/staff', {
+        templateUrl: 'views/staff.html'
+      })
       .when('/contact', {
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
