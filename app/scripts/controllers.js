@@ -1,10 +1,8 @@
 'use strict';
 
 angular.module('pioApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('ContactCtrl', function ($scope) {
+    $scope.submitContact = function() {
+        alert("We sent something!");
+    }
   });
