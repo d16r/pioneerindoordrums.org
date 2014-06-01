@@ -1,0 +1,41 @@
+<div class="row" ng-controller="AuditionCtrl">
+    <div class="col-md-5">
+        <form novalidate ng-submit="submitAuditionForm()" name="form"> 
+            <input type="text" class="form-control" placeholder="First Name" ng-model="audition.firstName" required />
+            <input type="text" class="form-control" placeholder="Last Name" ng-model="audition.lastName" required />
+            <input type="text" class="form-control" placeholder="Street Address" ng-model="audition.streetAddress" required />
+            <input type="text" class="form-control" placeholder="City" ng-model="audition.city" required />
+            <input type="text" class="form-control" placeholder="State" ng-model="audition.state" required />
+            <input type="text" class="form-control" placeholder="Zip Code" ng-model="audition.zipCode" required />
+            <input type="email" class="form-control" placeholder="Email" ng-model="audition.email" required />
+            <input type="tel" class="form-control" placeholder="Phone" ng-model="audition.phone" required />
+            <input type="text" class="form-control" placeholder="Instrument(s)" ng-model="audition.instruments" required />
+
+            <textarea class="form-control" placeholder="Special talents (Juggling,Unicycle,Flips..)" ng-model="audition.specialTalents" required />
+            <input type="submit" class="btn btn-lg" />
+        </form>
+
+        {{ audition }}
+    </div>
+
+    <div class="col-md-7">
+        <h2>2014-2015 Pioneer Indoor Auditions</h2>
+        <h3>When is it?</h3>
+        <p>November 9th, 2014. 8:30am-7pm</p>
+        <h3>Where is it?</h3>
+        <p>Romeoville High School</p>
+        <h3>What should I bring?</h3>
+        <ul>
+            <li>$30 (Audition Fee)</li>
+            <li>Sticks/Mallets</li>
+            <li>Audition Music</li>
+            <li>Comfortable clothing. If you are audition for battery, you will be moving.</li>
+        </ul>
+    </div>
+</div>
+<br><br>
+<div class="row">
+    <div class="col-md-12">
+        <a href="http://pioneerindoordrums.org/uploads/PIO_Technique_Exercises_12.pdf">Battery Audition Packet</a>
+    </div>
+</div>

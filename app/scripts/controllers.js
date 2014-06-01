@@ -23,4 +23,10 @@ angular.module('pioApp')
             bio: "Hi, my name is Thomas Moffitt."
         }
     ]
+  })
+  .controller('AuditionCtrl', function ($scope) {
+    $scope.instruments = ['Snare', 'Tenors', 'Bass Drum', 'Cymbals', 'Front Ensemble']
+    $scope.submitAuditionForm = function() {
+      alert("Audition form submitted!");
+    }
   });
