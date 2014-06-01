@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('pioneerindoordrumsorgApp', [
+  .module('pioApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',

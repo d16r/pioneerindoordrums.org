@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('pioneerindoordrumsorgApp')
+angular.module('pioApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
