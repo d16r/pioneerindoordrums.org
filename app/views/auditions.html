@@ -1,7 +1,8 @@
 <div class="row" ng-controller="AuditionCtrl">
     <div class="col-md-4 col-md-offset-2">
         <h1>Register</h1><br><br>
-        <form novalidate ng-submit="submitAuditionForm()" name="form">
+        <div ng-show="registrationComplete" class="alert alert-success">Congratulations! You are all registered. See you at auditions!</div>
+        <form ng-hide="registrationComplete" novalidate ng-submit="submitAuditionForm()" name="form">
             <div class="row">
                 <div class="col-md-5">
                     <input type="text" class="form-control" placeholder="First Name" ng-model="auditionee.firstName" required />
