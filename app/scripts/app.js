@@ -1,13 +1,13 @@
 'use strict';
 
-angular
-  .module('pioApp', [
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
-    'ngRoute'
-  ])
-  .config(function ($routeProvider) {
+var app = angular.module('pioApp', ['ngCookies',
+                                    'ngResource',
+                                    'ngSanitize',
+                                    'ngRoute',
+                                    'firebase'
+                                    ]);
+
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html'
@@ -36,3 +36,5 @@ angular
         redirectTo: '/'
       });
   });
+
+app.constant('FIREBASE_REF', 'http://www.pioneerindoordrums.firebaseio.com');
