@@ -4,46 +4,52 @@
         <div ng-show="registrationComplete" class="alert alert-success">Congratulations! You are all registered. See you at auditions!</div>
         <form ng-hide="registrationComplete" novalidate ng-submit="submitAuditionForm()" name="form">
             <div class="row">
-                <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="First Name" ng-model="auditionee.firstName" required />
+                <div class="col-md-5 form-group">
+                    <label class="control-label" for="firstName">First Name *</label>
+                    <input type="text" class="form-control" name="firstName" ng-model="auditionee.firstName" required />
                 </div>
-                <div class="col-md-7">
-                    <input type="text" class="form-control" placeholder="Last Name" ng-model="auditionee.lastName" required />
-                </div>
-            </div><br>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <input type="email" class="form-control" placeholder="Email" ng-model="auditionee.email" required />
+                <div class="col-md-7 form-group">
+                    <label class="control-label" for="lastName">Last Name *</label>
+                    <input type="text" class="form-control" name="lastName" ng-model="auditionee.lastName" required />
                 </div>
             </div><br>
 
             <div class="row">
-                <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="City" ng-model="auditionee.city" />
+                <div class="col-md-12 form-group">
+                    <label class="control-label" for="email">Email *</label>
+                    <input type="email" class="form-control" name="email" ng-model="auditionee.email" required />
                 </div>
-                <div class="col-md-7">
-                    <select class="form-control" ng-model="auditionee.state" ng-options="state for state in states" >
+            </div><br>
+
+            <div class="row">
+                <div class="col-md-5 form-group">
+                    <label class="control-label" for="city">City *</label>
+                    <input type="text" class="form-control" name="city" ng-model="auditionee.city" required />
+                </div>
+                <div class="col-md-7 form-group">
+                    <label class="control-label" for="state">State *</label>
+                    <select class="form-control" ng-model="auditionee.state" ng-options="state for state in states" required>
                     </select>
                 </div>
             </div><br>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 form-group">
+                    <label class="control-label" for="instruments">Instruments *</label>
                     <select multiple class="form-control" ng-model="auditionee.instruments" ng-options="instrument for instrument in instruments" required>
                     </select>
                 </div>
             </div><br>
 
             <div class="row">
-                <div class="col-md-12">
-                    <textarea rows="4" class="form-control" placeholder="Special talents (Juggling,Unicycle,Flips..)" ng-model="auditionee.specialTalents" />
+                <div class="col-md-12 form-group">
+                    <label class="control-label" for="specialTalents">Special Talents</label>
+                    <textarea rows="4" class="form-control" name="specialTalents" placeholder=" Juggling,Unicycle,Flips.." ng-model="auditionee.specialTalents" />
                 </div>
             </div><br>
 
             <input ng-disabled="form.$invalid" type="submit" class="btn btn-lg" />
         </form>
-        {{ auditionee }}
     </div>
     <div class="col-md-4 ">
         <h1>Audition Information</h1><br>
