@@ -4,45 +4,45 @@
         <form novalidate ng-submit="submitAuditionForm()" name="form">
             <div class="row">
                 <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="First Name" ng-model="audition.firstName" required />
+                    <input type="text" class="form-control" placeholder="First Name" ng-model="auditionee.firstName" required />
                 </div>
                 <div class="col-md-7">
-                    <input type="text" class="form-control" placeholder="Last Name" ng-model="audition.lastName" required />
+                    <input type="text" class="form-control" placeholder="Last Name" ng-model="auditionee.lastName" required />
                 </div>
             </div><br>
 
             <div class="row">
                 <div class="col-md-12">
-                    <input type="email" class="form-control" placeholder="Email" ng-model="audition.email" required />
+                    <input type="email" class="form-control" placeholder="Email" ng-model="auditionee.email" required />
                 </div>
             </div><br>
 
             <div class="row">
                 <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="City" ng-model="audition.city" />
+                    <input type="text" class="form-control" placeholder="City" ng-model="auditionee.city" />
                 </div>
                 <div class="col-md-7">
-                    <select class="form-control" ng-model="audition.state" ng-options="state for state in states" >
+                    <select class="form-control" ng-model="auditionee.state" ng-options="state for state in states" >
                     </select>
                 </div>
             </div><br>
 
             <div class="row">
                 <div class="col-md-12">
-                    <select multiple class="form-control" ng-model="audition.instruments" ng-options="instrument for instrument in instruments" required>
+                    <select multiple class="form-control" ng-model="auditionee.instruments" ng-options="instrument for instrument in instruments" required>
                     </select>
                 </div>
             </div><br>
 
             <div class="row">
                 <div class="col-md-12">
-                    <textarea rows="4" class="form-control" placeholder="Special talents (Juggling,Unicycle,Flips..)" ng-model="audition.specialTalents" />
+                    <textarea rows="4" class="form-control" placeholder="Special talents (Juggling,Unicycle,Flips..)" ng-model="auditionee.specialTalents" />
                 </div>
             </div><br>
 
-            <input type="submit" class="btn btn-lg" />
+            <input ng-disabled="form.$invalid" type="submit" class="btn btn-lg" />
         </form>
-        {{ audition }}
+        {{ auditionee }}
     </div>
     <div class="col-md-4 ">
         <h1>Audition Information</h1><br>

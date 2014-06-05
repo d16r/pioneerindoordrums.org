@@ -74,7 +74,7 @@ angular.module('pioApp')
       }
     ];
   })
-  .controller('AuditionCtrl', function ($scope) {
+  .controller('AuditionCtrl', function ($scope, Auditionee) {
     $scope.instruments = ['Snare', 'Tenors', 'Bass Drum', 'Cymbals', 'Front Ensemble'];
     $scope.states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
       'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
@@ -87,5 +87,7 @@ angular.module('pioApp')
       'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
     ];
     $scope.submitAuditionForm = function() {
+        Auditionee.create($scope.auditionee);
+        alert("You have successfully registered!");
     };
   });

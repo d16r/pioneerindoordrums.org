@@ -37,4 +37,4 @@ app.config(function ($routeProvider) {
       });
   });
 
-app.constant('FIREBASE_REF', 'http://www.pioneerindoordrums.firebaseio.com');
+app.constant('FIREBASE_URL', 'https://pioneerindoordrums.firebaseio.com/');
