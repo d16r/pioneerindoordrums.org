@@ -1,6 +1,6 @@
 'use strict';
 
-app.module('pioApp').controller('AuditionCtrl', function ($scope, $cookies, Auditionee) {
+angular.module('pioApp').controller('AuditionCtrl', function ($scope, $cookies, Auditionee) {
     $scope.registrationComplete = $cookies.hasRegistered;
     $scope.instruments = ['Snare', 'Tenors', 'Bass Drum', 'Cymbals', 'Front Ensemble'];
     $scope.states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
