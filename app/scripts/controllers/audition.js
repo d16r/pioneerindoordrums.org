@@ -1,8 +1,6 @@
 'use strict';
 
-angular.module('pioApp')
-  .controller('ContactCtrl', function ($scope) {
-}).controller('AuditionCtrl', function ($scope, $cookies, Auditionee) {
+app.module('pioApp').controller('AuditionCtrl', function ($scope, $cookies, Auditionee) {
     $scope.registrationComplete = $cookies.hasRegistered;
     $scope.instruments = ['Snare', 'Tenors', 'Bass Drum', 'Cymbals', 'Front Ensemble'];
     $scope.states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
@@ -20,4 +18,4 @@ angular.module('pioApp')
         $cookies.hasRegistered = true;
         $scope.registrationComplete = true;
     };
-  });
+});
