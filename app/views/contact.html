@@ -1,33 +1,38 @@
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
         <h2>Email Us.</h2>
-        <form ng-submit="submitContact()" name="form">
+        <form ng-submit="sendContactForm()" novalidate name="contactForm">
             <div class="row">
-                <div class="col-md-5">
-                    <input class="form-control" type="text" ng-model="contact.firstName" placeholder="First Name">
+                <div class="col-md-5" ng-class="{ 'has-error': contactForm.firstName.$invalid && !contactForm.firstName.$pristine }">
+                    <label class="control-label" for="firstName">First Name *</label>
+                    <input class="form-control" type="text" name="firstName" ng-model="contact.firstName" ng-minLength="2" required>
                 </div>
-                <div class="col-md-7">
-                    <input class="form-control" type="text" ng-model="contact.lastName" placeholder="Last Name">
+                <div class="col-md-7" ng-class="{ 'has-error': contactForm.lastName.$invalid && !contactForm.lastName.$pristine }">
+                    <label class="control-label" for="lastName">Last Name *</label>
+                    <input class="form-control" type="text" name="lastName" ng-model="contact.lastName" ng-minLength="2" required>
                 </div>
             </div><br>
             <div class="row">
-                <div class="col-md-12">
-                    <input class="form-control" type="email" ng-model="contact.email" placeholder="Email">
+                <div class="col-md-12" ng-class="{ 'has-error': contactForm.email.$invalid && !contactForm.email.$pristine }">
+                    <label class="control-label" for="email">Email *</label>
+                    <input class="form-control" type="email" name="email" ng-model="contact.email" ng-minLength="5" required>
                 </div>
             </div><br>
             
             <div class="row">
-                <div class="col-md-12">
-                    <input class="form-control" type="text" ng-model="contact.subject" placeholder="Subject">
+                <div class="col-md-12" ng-class="{ 'has-error': contactForm.subject.$invalid && !contactForm.subject.$pristine }">
+                    <label class="control-label" for="subject">Subject *</label>
+                    <input class="form-control" type="text" name="subject" ng-model="contact.subject" ng-minLength="3" required>
                 </div>
             </div><br>
 
             <div class="row">
-                <div class="col-md-12">
-                    <textarea class="form-control" type="message" ng-model="contact.message" placeholder="Message" /><br>
+                <div class="col-md-12" ng-class="{ 'has-error': contactForm.message.$invalid && !contactForm.message.$pristine }">
+                    <label class="control-label" for="message">Message *</label>
+                    <textarea class="form-control" rows="10" type="message" name="message" ng-model="contact.message" ng-minLength="10" required/><br>
                 </div>
             </div><br>
-            <input class="btn btn-lg" type="submit" value="Send!" />
+            <input ng-disabled="contactForm.$invalid" type="submit" class="btn btn-lg btn-primary" />
         </form>
     </div>
 </div>
