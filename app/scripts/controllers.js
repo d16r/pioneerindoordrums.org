@@ -72,9 +72,7 @@ angular.module('pioApp')
         picture: '/images/bobbybonslater.png',
         bio: 'Bobby Bonslater began his marching arts career in 2001 playing baritone for Racine Scouts Drum and Bugle Corps. He advanced to become the Trumpet Soloist for the 2004 DCI Midwest Div III Champions, Americanos Drum and Bugle Corps, the 2005 DCI Division II/III Grand Champion, East Coast Jazz Drum and Bugle Corps and the Madison Scouts Drum and Bugle Corps, where he aged out in 2007. Bobby continued to march at the all-age competitive level with the 3-time DCA World Champions, Govenaires Drum and Bugle Corps, while serving as Program Coordinator for the Racine Scouts who performed twice as DCI Open Class Semi-finalist under his leadership. In addition to his extensive Drum Corps background, Bobby marched Cymbals for Americanos and Pioneer Indoor Percussion Ensembles earning two WGI World Championships. This will be Bobby\'s first year back with Pioneer Indoor. Bobby is currently working with Maine West High School of Des Plaines, IL as Percussion Instructor and Show Designer, Shadow Armada of Oregon, WI as Visual Coordinator/Woodwind Tech and the Govenaires of St. Peter, MN as Brass Caption head.'
       }
-    ];
-  })
-  .controller('AuditionCtrl', function ($scope, $cookies, Auditionee) {
+  }).controller('AuditionCtrl', function ($scope, $cookies, Auditionee) {
     $scope.registrationComplete = $cookies.hasRegistered;
     $scope.instruments = ['Snare', 'Tenors', 'Bass Drum', 'Cymbals', 'Front Ensemble'];
     $scope.states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
