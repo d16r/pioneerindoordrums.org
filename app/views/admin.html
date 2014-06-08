@@ -8,8 +8,32 @@
         <div class="tab-pane active" id="auditionees">
             <div ng-include="'views/auditionees.html'" ng-controller="AuditioneesCtrl"></div>
         </div>
-        <div class="tab-pane" id="faq">
-            THIS IS MY COMMENTS.
+        <div class="tab-pane" id="faq" ng-controller='FAQCtrl'>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Create a New Question</h3>
+                    <form novalidate ng-submit="submitNewFAQ()" name="faqForm">
+                        <div class="row">
+                            <div class="col-md-12 form-group" ng-class="{ 'has-error': faqForm.question.$invalid && !faqForm.question.$pristine }">
+                                <label class="control-label" for="question">Question *</label>
+                                <input type="text" class="form-control" name="question" ng-model="faq.question" ng-minLength="10" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group" ng-class="{ 'has-error': faqForm.answer.$invalid && !faqForm.answer.$pristine }">
+                                <label class="control-label" for="answer">Answer *</label>
+                                <textarea rows="4" class="form-control" name="answer" ng-model="faq.answer" ng-minLength="10" required />
+                            </div>
+                        </div>
+                        <input ng-disabled="faqForm.$invalid" type="submit" class="btn btn-lg btn-primary" />
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>Preview:</h3>
+                    <h5>{{ faq.question }}</h5>
+                    <p>{{ faq.answer }}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
