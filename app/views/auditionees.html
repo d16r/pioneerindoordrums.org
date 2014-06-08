@@ -18,7 +18,10 @@
             <td>{{ auditionee.city }}</td>
             <td>{{ auditionee.state }}</td>
             <td>{{ auditionee.instruments }}</td>
-            <td>{{ auditionee.specialTalents }}</td>
+            <td>
+                <span class="label label-success" ng-show="auditionee.specialTalents">YES</span>
+                <span class="label label-danger" ng-show="!auditionee.specialTalents">NO</span>
+            </td>
             <td><a href="#">details</a></td>
         </tr>
     </tbody>
