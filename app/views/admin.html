@@ -34,6 +34,26 @@
                     <p>{{ faq.answer }}</p>
                 </div>
             </div>
+            <div class="row">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Question</th>
+                            <th>Answer</th>
+                            <th>Action</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="(id, faq) in faqs">
+                            <td>{{ faq.question }}</td>
+                            <td>{{ faq.answer }}</td>
+                            <td>
+                                <a ng-click="deleteQuestion(id)">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>

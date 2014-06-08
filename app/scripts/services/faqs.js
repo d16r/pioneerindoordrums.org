@@ -9,6 +9,9 @@ app.factory('FAQ', function ($firebase, FIREBASE_URL) {
         all: faqs,
         create: function (faq) {
             return faqs.$add(faq);
+        },
+        remove: function (id) {
+            return faqs.$remove(id);
         }
     };
     
