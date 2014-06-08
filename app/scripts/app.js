@@ -15,6 +15,9 @@ app.config(function ($routeProvider) {
       .when('/faqs', {
         templateUrl: 'views/faqs.html'
       })
+      .when('/admin', {
+        templateUrl: 'views/admin.html'
+      })
       .when('/history', {
         templateUrl: 'views/history.html'
       })
@@ -31,10 +34,6 @@ app.config(function ($routeProvider) {
       .when('/auditions', {
         templateUrl: 'views/auditions.html',
         controller: 'AuditionCtrl'
-      })
-      .when('/auditionees', {
-        templateUrl: 'views/auditionees.html',
-        controller: 'AuditioneesCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -1,32 +1,25 @@
-<div class="row" ng-controller="AuditioneesCtrl">
-    <div class="col-md-10 col-md-offset-1">
-        <div class="page-header">
-          <h1>2014-2015 Auditions <small>Pioneer Indoor</small></h1>
-        </div>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>City</th>
-                    <th>State</th>
-                    <th>Instruments</th>
-                    <th>Special Talents</th>
-                <tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="auditionee in auditionees">
-                    <td>{{ auditionee.firstName }}</td>
-                    <td>{{ auditionee.lastName}}</td>
-                    <td>{{ auditionee.email }}</td>
-                    <td>{{ auditionee.city }}</td>
-                    <td>{{ auditionee.state }}</td>
-                    <td>{{ auditionee.instruments }}</td>
-                    <td>{{ auditionee.specialTalents }}</td>
-                    <td><a href="#">details</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Instruments</th>
+            <th>Special Talents</th>
+        <tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="auditionee in auditionees">
+            <td>{{ auditionee.firstName }}</td>
+            <td>{{ auditionee.lastName}}</td>
+            <td>{{ auditionee.email }}</td>
+            <td>{{ auditionee.city }}</td>
+            <td>{{ auditionee.state }}</td>
+            <td>{{ auditionee.instruments }}</td>
+            <td>{{ auditionee.specialTalents }}</td>
+            <td><a href="#">details</a></td>
+        </tr>
+    </tbody>
+</table>
