@@ -1,0 +1,23 @@
+<div class="row" ng-controller="LoginCtrl">
+    <div class="col-md-4 col-md-offset-4">
+        <form ng-submit="login()" novalidate name="loginForm">
+            <div ng-show="error">
+                <p ng-show="error" class="text-danger">{{ error }}</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12" ng-class="{ 'has-error': loginForm.email.$invalid && !loginForm.email.$pristine }">
+                    <label class="control-label" for="email">Email *</label>
+                    <input class="form-control" type="email" name="email" ng-model="user.email" required>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <label class="control-label" for="password">Password *</label>
+                    <input class="form-control" type="password" name="password" ng-model="user.password" required>
+                </div>
+            </div><br>
+            <input ng-disabled="loginForm.$invalid" type="submit" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
+

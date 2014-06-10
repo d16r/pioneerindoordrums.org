@@ -35,6 +35,10 @@ app.config(function ($routeProvider) {
         templateUrl: 'views/auditions.html',
         controller: 'AuditionCtrl'
       })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
