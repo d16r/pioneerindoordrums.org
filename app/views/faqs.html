@@ -13,7 +13,7 @@
     <div class="col-md-5 col-md-offset-1">
         <div ng-repeat="faq in faqs">
             <h3>{{ faq.question }}</h3>
-            <p>{{ faq.answer }}</p>
+            <p ng-bind-html="faq.answer | markdown"></p>
         </div>
     </div>
 </div>
