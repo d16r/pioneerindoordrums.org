@@ -1,3 +1,14 @@
+<style>
+.nav-pic {
+  margin: 15px -11px 0 -3px;
+  max-height: 20px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+</style>
+
+
 <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -25,6 +36,16 @@
             </li>
             <li>
                 <a href="#/contact">Contact</a>
+            </li>
+            <li ng-show="signedIn()" class="hidden-sm hidden-xs">
+              <img ng-src="http://www.gravatar.com/avatar/{{ currentUser.md5_hash }}" class="nav-pic" />
+              {{ currentUser.username }}
+            </li>
+            <li>
+                <a href="#" ng-click="logout()" ng-show="signedIn()">Logout</a>
+            </li>
+            <li ng-hide="signedIn()">
+                <a href="#/login">Log In</a>
             </li>
         </ul>
     </div><!-- /.navbar-collapse -->

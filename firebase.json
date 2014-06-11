@@ -1,0 +1,9 @@
+{
+  "firebase": "pioneerindoordrums",
+  "public": "app",
+  "ignore": [
+    "firebase.json",
+    ".*",
+    "**/node_modules/**"
+  ]
+}
