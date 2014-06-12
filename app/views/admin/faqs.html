@@ -1,0 +1,25 @@
+<br>
+<div class="row">
+    <button type="button" class="btn btn-success" data-animation="am-fade-and-scale" data-template="views/modals/faqs/create.html" bs-modal="modal">Create a New Question
+    </button>
+</div><br>
+<div class="row">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Answer</th>
+                <th>Action</th>
+            <tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="(id, faq) in faqs">
+                <td>{{ faq.question }}</td>
+                <td>{{ faq.answer }}</td>
+                <td>
+                    <button type="button" class="btn btn-danger" data-template="views/modals/faqs/delete.html" bs-modal="modal">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
