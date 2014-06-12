@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page, $modal) {
+angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page) {
     Page.setTitle('Pioneer Indoor - FAQs')
 
     $scope.faqs = FAQ.all;
@@ -14,9 +14,7 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page, $mod
         $scope.deleteId = null;
     }
     
-    $scope.submitNewFAQ = function() {
-        FAQ.create($scope.faq)
-        $scope.faq.question = ''
-        $scope.faq.answer = ''
+    $scope.submitNewFAQ = function(faq) {
+        FAQ.create(faq);
     }
 });

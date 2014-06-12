@@ -9,7 +9,6 @@
             <tr>
                 <th>Question</th>
                 <th>Answer</th>
-                <th>Action</th>
             <tr>
         </thead>
         <tbody>
@@ -17,7 +16,12 @@
                 <td>{{ faq.question }}</td>
                 <td>{{ faq.answer }}</td>
                 <td>
-                    <button type="button" class="btn btn-danger" ng-click="setIdToDelete(id)" data-template="views/modals/faqs/delete.html" bs-modal="modal">Delete</button>
+                    <button type="button" class="btn btn-primary" data-template="views/modals/faqs/delete.html" bs-modal="modal">
+                         <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                    <button type="button" class="btn btn-danger" ng-click="setIdToDelete(id)" data-template="views/modals/faqs/delete.html" bs-modal="modal">
+                         <span class="glyphicon glyphicon-trash"></span>
+                    </button>
                 </td>
             </tr>
         </tbody>
