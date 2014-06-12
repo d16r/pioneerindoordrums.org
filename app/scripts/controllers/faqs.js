@@ -13,5 +13,9 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page, $mod
         FAQ.remove(id);
     }
     
+    $scope.showDeleteModal = function() {
+        $modal({template: 'views/modals/delete.html', show: true});
+    }
+    
     $scope.modal = {title: 'Title', content: 'Hello Modal<br />This is a multiline message!'};
 });
