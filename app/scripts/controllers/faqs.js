@@ -5,8 +5,13 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page, $mod
 
     $scope.faqs = FAQ.all;
     
+    $scope.setIdToDelete = function(id) {
+        $scope.deleteId = id;
+    }
+    
     $scope.deleteQuestion = function() {
-        alert('hey');
+        FAQ.remove($scope.deleteId);
+        $scope.deleteId = null;
     }
     
     $scope.submitNewFAQ = function() {

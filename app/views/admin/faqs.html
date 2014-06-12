@@ -17,7 +17,7 @@
                 <td>{{ faq.question }}</td>
                 <td>{{ faq.answer }}</td>
                 <td>
-                    <button type="button" class="btn btn-danger" data-template="views/modals/faqs/delete.html" bs-modal="modal">Delete</button>
+                    <button type="button" class="btn btn-danger" ng-click="setIdToDelete(id)" data-template="views/modals/faqs/delete.html" bs-modal="modal">Delete</button>
                 </td>
             </tr>
         </tbody>
