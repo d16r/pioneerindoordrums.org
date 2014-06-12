@@ -21,13 +21,13 @@
                       <div class="row">
                           <div class="col-md-12 form-group" ng-class="{ 'has-error': faqForm.question.$invalid && !faqForm.question.$pristine }">
                               <label class="control-label" for="question">Question *</label>
-                              <input type="text" class="form-control" name="question" ng-model="faq.question" ng-minLength="10" required />
+                              <input type="text" class="form-control" name="question" ng-model="$parent.faq.question" ng-minLength="10" required />
                           </div>
                       </div>
                       <div class="row">
                           <div class="col-md-12 form-group" ng-class="{ 'has-error': faqForm.answer.$invalid && !faqForm.answer.$pristine }">
                               <label class="control-label" for="answer">Answer *</label>
-                              <textarea rows="4" class="form-control" name="answer" ng-model="faq.answer" ng-minLength="10" required />
+                              <textarea rows="4" class="form-control" name="answer" ng-model="$parent.faq.answer" ng-minLength="10" required />
                               <br /><p><strong>Note:</strong> You can use <a target="_blank" href="https://help.github.com/articles/markdown-basics">markdown</a> syntax in your answer!<p>
                           </div>
                       </div>
@@ -40,7 +40,8 @@
           </div>
       </div>
       <div class="modal-footer">
-        <input ng-click="submitNewFAQ(faq); $hide()" ng-disabled="faqForm.$invalid" type="submit" class="btn btn-success" />
+        <button ng-click="$hide()" ng-show="$parent.isUpdate" ng-disabled="faqForm.$invalid" class="btn btn-primary" >Update</button>
+        <button ng-click="submitNewFAQ(); $hide()" ng-hide="$parent.isUpdate" ng-disabled="faqForm.$invalid" class="btn btn-success" >Create</button>
         <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
       </div>
     </div>

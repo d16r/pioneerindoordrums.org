@@ -12,6 +12,9 @@ app.factory('FAQ', function ($firebase, FIREBASE_URL) {
         },
         remove: function (id) {
             return faqs.$remove(id);
+        },
+        update: function (id, faq) {
+            return faqs.$update(id, faq);
         }
     };
     
