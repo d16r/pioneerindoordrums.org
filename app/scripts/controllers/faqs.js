@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page) {
+angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page, $modal) {
     Page.setTitle('Pioneer Indoor - FAQs')
 
     $scope.faqs = FAQ.all;
@@ -12,4 +12,6 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page) {
     $scope.deleteQuestion = function(id) {
         FAQ.remove(id);
     }
+    
+    $scope.modal = {title: 'Title', content: 'Hello Modal<br />This is a multiline message!'};
 });

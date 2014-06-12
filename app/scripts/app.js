@@ -5,7 +5,7 @@ var app = angular.module('pioApp', ['ngCookies',
                                     'ngSanitize',
                                     'ngRoute',
                                     'firebase',
-                                    'mgcrea.ngStrap'
+                                    'mgcrea.ngStrap.modal'
                                     ]);
 
 app.config(function ($routeProvider) {
