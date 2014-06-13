@@ -11,7 +11,8 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page) {
     
     $scope.setValuesForCreate = function() {
         $scope.isUpdate = false;
-        resetFAQValues();
+        $scope.faq = '';
+        $scope.faqId = '';
     }
     
     $scope.setValuesForUpdate = function(id, faq) {
@@ -22,21 +23,18 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page) {
     
     $scope.deleteQuestion = function() {
         FAQ.remove($scope.deleteId);
-        $scope.deleteId = null;
+        $scope.deleteId = '';
     }
     
     $scope.updateFAQ = function() {
         FAQ.update($scope.faqId, $scope.faq);
-        resetFAQValues();
+        $scope.faq = '';
+        $scope.faqId = '';
     }
     
     $scope.submitNewFAQ = function() {
         FAQ.create($scope.faq);
-        resetFAQValues();
-    }
-    
-    var resetFAQValues = function() {
-        $scope.faq = null;
-        $scope.faqId = null;
+        $scope.faq = '';
+        $scope.faqId = '';
     }
 });

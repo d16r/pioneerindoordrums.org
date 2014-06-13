@@ -9,7 +9,10 @@ var app = angular.module('pioApp', ['ngCookies',
                                     'mgcrea.ngStrap.popover'
                                     ]);
 
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider, $httpProvider) {
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html'
