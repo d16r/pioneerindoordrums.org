@@ -53,8 +53,9 @@ app.config(function ($routeProvider, $httpProvider) {
   
 app.run(function ($location, $rootScope, Auth) {
     $rootScope.$on( "$routeChangeStart", function(event, next, current) {
+        console.log(next);
         if (next.templateUrl == 'views/admin.html') {
-            if (!$rootScope.signedIn()) {
+            if (!Auth.signedIn() && current != undefined) {
                 $location.path('/login');
             }
         }
