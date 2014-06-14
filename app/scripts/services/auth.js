@@ -24,14 +24,6 @@ app.factory('Auth', function ($firebaseSimpleLogin, $rootScope, FIREBASE_URL) {
     $rootScope.logout = function() {
         return Auth.logout();
     }
-    
-    $rootScope.$on('$firebaseSimpleLogin:login', function(e, authUser) {
-        $rootScope.currentUser = authUser;
-    });
-
-    $rootScope.$on('$firebaseSimpleLogin:logout', function() {
-        delete $rootScope.currentUser;
-    });
 
     return Auth;
 });

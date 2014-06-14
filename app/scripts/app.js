@@ -6,7 +6,9 @@ var app = angular.module('pioApp', ['ngCookies',
                                     'ngRoute',
                                     'firebase',
                                     'mgcrea.ngStrap.modal',
-                                    'mgcrea.ngStrap.popover'
+                                    'mgcrea.ngStrap.popover',
+                                    'angulartics',
+                                    'angulartics.google.analytics'
                                     ]);
 
 app.config(function ($routeProvider, $httpProvider) {
@@ -51,8 +53,8 @@ app.config(function ($routeProvider, $httpProvider) {
   
 app.run(function ($location, $rootScope, Auth) {
     $rootScope.$on( "$routeChangeStart", function(event, next, current) {
-        /*if (Auth.signedIn() == false) {
-            if (next.templateUrl === 'views/admin.html') {
+        /*if (next.templateUrl === 'views/admin.html') {
+            if (!$rootScope.signedIn()) {
                 $location.path('/login');
             }
         }*/
