@@ -1,7 +1,8 @@
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
         <h2>Email Us.</h2>
-        <form ng-submit="sendContactForm()" novalidate name="contactForm">
+        <div class="alert" ng-class="{ 'alert-danger': error, 'alert-success': success}" ng-show="message">{{ message }}</div>
+        <form ng-hide="message" ng-submit="sendContactForm()" novalidate name="contactForm">
             <div class="row">
                 <div class="col-md-5" ng-class="{ 'has-error': contactForm.firstName.$invalid && !contactForm.firstName.$pristine }">
                     <label class="control-label" for="firstName">First Name *</label>
