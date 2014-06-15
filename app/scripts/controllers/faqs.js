@@ -16,20 +16,21 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ, Pa
     }
     
     $scope.showUpdateModal = function(id, faq) {
+        var updateScope = $scope.$new(true);
+        updateScope.id = id;
+        updateScope.faq = faq;
+        updateScope.update = true;
+        
         var modalInstance = $modal.open({
           templateUrl: 'createAndUpdate.html',
           controller: 'CreateUpdateModalCtrl',
           size: 'lg',
-          resolve: {
-              update: function() { return true; },
-              id: function() { return id; },
-              faq: function() { return faq; }
-          }
+          scope: updateScope
         });
     }
     
     $scope.showCreateModal = function() {
-        var createScope = $scope.$new(false);
+        var createScope = $scope.$new(true);
         createScope.update = false;
         
         var modalInstance = $modal.open({

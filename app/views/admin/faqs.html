@@ -70,7 +70,8 @@
         </div>
     </div>
     <div class="modal-footer">
-          <button ng-click="createQuestion(faq);" ng-disabled="faqForm.$invalid" class="btn btn-success" >Create</button>
+          <button ng-show="update" ng-click="updateQuestion(faq);" ng-disabled="faqForm.$invalid" class="btn btn-primary" >Update</button>
+          <button ng-hide="update" ng-click="createQuestion(faq);" ng-disabled="faqForm.$invalid" class="btn btn-success" >Create</button>
           <button type="button" ng-click="$close()" class="btn btn-default">Close</button>
     </div>
 </script>
