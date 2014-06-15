@@ -5,19 +5,19 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page) {
 
     $scope.faqs = FAQ.all;
     
-    $scope.setIdToDelete = function(id) {
-        $scope.deleteId = id;
+    $scope.showDeleteModal = function() {
+        alert('this should show the delete modal.');
     }
     
-    $scope.setValuesForCreate = function() {
-        $scope.isUpdate = false;
+    $scope.showEditModal = function() {
+        alert('this should show the edit modal');
     }
     
-    $scope.setValuesForUpdate = function() {
-        $scope.isUpdate = true;
+    $scope.showCreateModal = function() {
+        alert('this should show the create modal');
     }
     
-    $scope.deleteQuestion = function() {
+    /*$scope.deleteQuestion = function() {
         FAQ.remove($scope.deleteId);
     }
     
@@ -27,5 +27,5 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page) {
     
     $scope.submitNewFAQ = function() {
         FAQ.create($scope.faq);
-    }
+    }*/
 });

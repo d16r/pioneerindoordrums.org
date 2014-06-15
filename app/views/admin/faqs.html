@@ -1,6 +1,6 @@
 <br>
 <div class="row">
-    <button type="button" ng-click="setValuesForCreate()" class="btn btn-success" data-animation="am-fade-and-scale" data-template="views/modals/faqs/createAndUpdate.html" bs-modal="modal">Create a New Question
+    <button type="button" ng-click="showCreateModal()" class="btn btn-success">Create a New Question
     </button>
 </div><br>
 <div class="row">
@@ -17,10 +17,10 @@
                 <td>{{ faq.question }}</td>
                 <td>{{ faq.answer }}</td>
                 <td>
-                    <button type="button" class="btn btn-primary" ng-click="setValuesForUpdate()" data-template="views/modals/faqs/createAndUpdate.html" bs-modal="modal">
+                    <button type="button" class="btn btn-primary" ng-click="showEditModal()">
                          <span class="glyphicon glyphicon-pencil"></span>
                     </button>
-                    <button type="button" class="btn btn-danger" ng-click="setIdToDelete(id)" data-template="views/modals/faqs/delete.html" bs-modal="modal">
+                    <button type="button" class="btn btn-danger" ng-click="showDeleteModal()">
                          <span class="glyphicon glyphicon-trash"></span>
                     </button>
                 </td>
