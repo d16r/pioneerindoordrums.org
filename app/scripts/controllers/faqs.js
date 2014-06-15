@@ -6,38 +6,27 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ, Pa
     $scope.faqs = FAQ.all;
     
     $scope.showDeleteModal = function(id) {
+        var deleteScope = $scope.$new(true);
+        deleteScope.id = id;
+        
         var modalInstance = $modal.open({
           templateUrl: 'delete.html',
           controller: 'DeleteModalCtrl',
-          resolve: {
-              id: function() { return id; }
-          }
+          scope: deleteScope
         });
     }
     
-    $scope.showUpdateModal = function(id, faq) {
-        var updateScope = $scope.$new(true);
-        updateScope.id = id;
-        updateScope.faq = faq;
-        updateScope.update = true;
+    $scope.showCreateUpdateModal = function(id, faq) {
+        var cuScope = $scope.$new(true);
+        cuScope.id = id;
+        cuScope.faq = faq;
+        cuScope.update = !(faq == undefined && id == undefined);
         
         var modalInstance = $modal.open({
           templateUrl: 'createAndUpdate.html',
           controller: 'CreateUpdateModalCtrl',
           size: 'lg',
-          scope: updateScope
-        });
-    }
-    
-    $scope.showCreateModal = function() {
-        var createScope = $scope.$new(true);
-        createScope.update = false;
-        
-        var modalInstance = $modal.open({
-          templateUrl: 'createAndUpdate.html',
-          controller: 'CreateUpdateModalCtrl',
-          size: 'lg',
-          scope: createScope
+          scope: cuScope
         });
     }
 });
@@ -49,14 +38,15 @@ angular.module('pioApp').controller('CreateUpdateModalCtrl', function($scope, $m
     }
     
     $scope.updateQuestion = function() {
-        alert('update');
+        alert($scope.faq.question);
+        $modalInstance.close();
     }
 });
 
 
-angular.module('pioApp').controller('DeleteModalCtrl', function($scope, $modalInstance, FAQ, id) {
+angular.module('pioApp').controller('DeleteModalCtrl', function($scope, $modalInstance, FAQ) {
     $scope.deleteQuestion = function () {
-        FAQ.remove(id);
+        FAQ.remove($scope.id);
         $modalInstance.close();
     };
 });

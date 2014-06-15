@@ -1,6 +1,6 @@
 <br>
 <div class="row">
-    <button type="button" ng-click="showCreateModal()" class="btn btn-success">Create a New Question
+    <button type="button" ng-click="showCreateUpdateModal()" class="btn btn-success">Create a New Question
     </button>
 </div><br>
 <div class="row">
@@ -17,7 +17,7 @@
                 <td>{{ faq.question }}</td>
                 <td>{{ faq.answer }}</td>
                 <td>
-                    <button type="button" class="btn btn-primary" ng-click="showUpdateModal(id, faq)">
+                    <button type="button" class="btn btn-primary" ng-click="showCreateUpdateModal(id, faq)">
                          <span class="glyphicon glyphicon-pencil"></span>
                     </button>
                     <button type="button" class="btn btn-danger" ng-click="showDeleteModal(id)">
