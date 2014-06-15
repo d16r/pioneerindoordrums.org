@@ -5,10 +5,13 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ, Pa
 
     $scope.faqs = FAQ.all;
     
-    $scope.showDeleteModal = function() {
+    $scope.showDeleteModal = function(id) {
         var modalInstance = $modal.open({
           templateUrl: 'delete.html',
-          controller: 'ModalInstanceCtrl'
+          controller: 'DeleteModalCtrl',
+          resolve: {
+              id: function() { return id; }
+          }
         });
     }
     
@@ -29,9 +32,9 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ, Pa
     }
 });
 
-var ModalInstanceCtrl = function ($scope, $modalInstance) {
-
-  $scope.ok = function () {
-    alert($scope.text);
+angular.module('pioApp').controller('DeleteModalCtrl', function($scope, $modalInstance, FAQ, id) {
+  $scope.deleteQuestion = function () {
+      FAQ.remove(id);
+      $modalInstance.close();
   };
-};
+});
