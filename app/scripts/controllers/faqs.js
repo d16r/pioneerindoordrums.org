@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page) {
+angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ, Page) {
     Page.setTitle('Pioneer Indoor - FAQs')
 
     $scope.faqs = FAQ.all;
@@ -13,19 +13,24 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, FAQ, Page) {
         alert('this should show the edit modal');
     }
     
+    $scope.items = ['item', 'item'];
+    
     $scope.showCreateModal = function() {
-        alert('this should show the create modal');
+        var modalInstance = $modal.open({
+          templateUrl: 'myModalContent.html',
+          controller: 'ModalInstanceCtrl',
+          size: 'lg'
+        });
     }
-    
-    /*$scope.deleteQuestion = function() {
-        FAQ.remove($scope.deleteId);
-    }
-    
-    $scope.updateFAQ = function() {
-        FAQ.update($scope.faqId, $scope.faq);
-    }
-    
-    $scope.submitNewFAQ = function() {
-        FAQ.create($scope.faq);
-    }*/
 });
+
+var ModalInstanceCtrl = function ($scope, $modalInstance) {
+
+  $scope.ok = function () {
+    alert($scope.text);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+};
