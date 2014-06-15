@@ -6,18 +6,23 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ, Pa
     $scope.faqs = FAQ.all;
     
     $scope.showDeleteModal = function() {
-        alert('this should show the delete modal.');
+        var modalInstance = $modal.open({
+          templateUrl: 'delete.html',
+          controller: 'ModalInstanceCtrl'
+        });
     }
     
     $scope.showEditModal = function() {
-        alert('this should show the edit modal');
+        var modalInstance = $modal.open({
+          templateUrl: 'createAndUpdate.html',
+          controller: 'ModalInstanceCtrl',
+          size: 'lg'
+        });
     }
-    
-    $scope.items = ['item', 'item'];
     
     $scope.showCreateModal = function() {
         var modalInstance = $modal.open({
-          templateUrl: 'myModalContent.html',
+          templateUrl: 'createAndUpdate.html',
           controller: 'ModalInstanceCtrl',
           size: 'lg'
         });
