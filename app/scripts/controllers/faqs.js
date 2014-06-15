@@ -15,26 +15,40 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ, Pa
         });
     }
     
-    $scope.showEditModal = function() {
+    $scope.showUpdateModal = function(id, faq) {
         var modalInstance = $modal.open({
           templateUrl: 'createAndUpdate.html',
-          controller: 'ModalInstanceCtrl',
-          size: 'lg'
+          controller: 'CreateUpdateModalCtrl',
+          size: 'lg',
+          resolve: {
+              update: function() { return true; },
+              id: function() { return id; },
+              faq: function() { return faq; }
+          }
         });
     }
     
     $scope.showCreateModal = function() {
+        var createScope = $scope.$new(false);
+        createScope.update = false;
+        
         var modalInstance = $modal.open({
           templateUrl: 'createAndUpdate.html',
-          controller: 'ModalInstanceCtrl',
-          size: 'lg'
+          controller: 'CreateUpdateModalCtrl',
+          size: 'lg',
+          scope: createScope
         });
     }
 });
 
-angular.module('pioApp').controller('CreateModalCtrl', function($scope, $modalInstance, FAQ) {
-    $scope.createQuestion = function() {
-        alert('create');
+angular.module('pioApp').controller('CreateUpdateModalCtrl', function($scope, $modalInstance, FAQ) {
+    $scope.createQuestion = function(faq) {
+        FAQ.create(faq);
+        $modalInstance.close();
+    }
+    
+    $scope.updateQuestion = function() {
+        alert('update');
     }
 });
 

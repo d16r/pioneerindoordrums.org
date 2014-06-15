@@ -17,7 +17,7 @@
                 <td>{{ faq.question }}</td>
                 <td>{{ faq.answer }}</td>
                 <td>
-                    <button type="button" class="btn btn-primary" ng-click="showEditModal()">
+                    <button type="button" class="btn btn-primary" ng-click="showUpdateModal(id, faq)">
                          <span class="glyphicon glyphicon-pencil"></span>
                     </button>
                     <button type="button" class="btn btn-danger" ng-click="showDeleteModal(id)">
@@ -70,7 +70,7 @@
         </div>
     </div>
     <div class="modal-footer">
-          <button ng-click="submitNewFAQ();" ng-disabled="faqForm.$invalid" class="btn btn-success" >Create</button>
+          <button ng-click="createQuestion(faq);" ng-disabled="faqForm.$invalid" class="btn btn-success" >Create</button>
           <button type="button" ng-click="$close()" class="btn btn-default">Close</button>
     </div>
 </script>
