@@ -20,7 +20,7 @@
             <td>{{ auditionee.instruments }}</td>
             <td>
                 <div ng-show="auditionee.specialTalents">
-                    <span class="label label-success" data-placement="top-right" data-content="{{ auditionee.specialTalents }}" data-trigger="hover" bs-popover>YES</span>
+                    <span class="label label-success" popover-placement="top" popover="{{ auditionee.specialTalents }}" popover-trigger="mouseenter">YES</span>
                 </div>
                 <span class="label label-danger" ng-show="!auditionee.specialTalents">NO</span>
             </td>
