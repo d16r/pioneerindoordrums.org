@@ -29,48 +29,48 @@
     </table>
 </div>
 
-
- <script type="text/ng-template" id="myModalContent.html">
-        <div class="modal-header">
-            <button type="button" class="close">&times;</button>
-            <h4 class="modal-title">Create Question</h4>
-        </div>
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Create:</h2>
-                </div>
-                <div class="col-md-6">
-                    <h2>Preview:</h2>
-                </div>
+<!-- This is the create/Update template -->
+<script type="text/ng-template" id="myModalContent.html">
+    <div class="modal-header">
+        <button type="button" class="close">&times;</button>
+        <h4 class="modal-title">Create Question</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Create:</h2>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>{{ formHeader }}</h3>
-                    <form novalidate name="faqForm">
-                        <div class="row">
-                            <div class="col-md-12 form-group" ng-class="{ 'has-error': faqForm.question.$invalid && !faqForm.question.$pristine }">
-                                <label class="control-label" for="question">Question *</label>
-                                <input type="text" class="form-control" name="question" ng-model="faq.question" ng-minLength="10" required />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 form-group" ng-class="{ 'has-error': faqForm.answer.$invalid && !faqForm.answer.$pristine }">
-                                <label class="control-label" for="answer">Answer *</label>
-                                <textarea rows="4" class="form-control" name="answer" ng-model="faq.answer" ng-minLength="10" required />
-                                <br /><p><strong>Note:</strong> You can use <a target="_blank" href="https://help.github.com/articles/markdown-basics">markdown</a> syntax in your answer!<p>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <h3>{{ faq.question }}</h3>
-                    <p ng-bind-html="faq.answer | markdown"></p>
-                </div>
+            <div class="col-md-6">
+                <h2>Preview:</h2>
             </div>
         </div>
-        <div class="modal-footer">
-              <button ng-click="submitNewFAQ();" ng-disabled="faqForm.$invalid" class="btn btn-success" >Create</button>
-              <button type="button" class="btn btn-default">Close</button>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>{{ formHeader }}</h3>
+                <form novalidate name="faqForm">
+                    <div class="row">
+                        <div class="col-md-12 form-group" ng-class="{ 'has-error': faqForm.question.$invalid && !faqForm.question.$pristine }">
+                            <label class="control-label" for="question">Question *</label>
+                            <input type="text" class="form-control" name="question" ng-model="faq.question" ng-minLength="10" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group" ng-class="{ 'has-error': faqForm.answer.$invalid && !faqForm.answer.$pristine }">
+                            <label class="control-label" for="answer">Answer *</label>
+                            <textarea rows="4" class="form-control" name="answer" ng-model="faq.answer" ng-minLength="10" required />
+                            <br /><p><strong>Note:</strong> You can use <a target="_blank" href="https://help.github.com/articles/markdown-basics">markdown</a> syntax in your answer!<p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>{{ faq.question }}</h3>
+                <p ng-bind-html="faq.answer | markdown"></p>
+            </div>
         </div>
-    </script>
+    </div>
+    <div class="modal-footer">
+          <button ng-click="submitNewFAQ();" ng-disabled="faqForm.$invalid" class="btn btn-success" >Create</button>
+          <button type="button" class="btn btn-default">Close</button>
+    </div>
+</script>
