@@ -32,9 +32,16 @@ angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ, Pa
     }
 });
 
+angular.module('pioApp').controller('CreateModalCtrl', function($scope, $modalInstance, FAQ) {
+    $scope.createQuestion = function() {
+        alert('create');
+    }
+});
+
+
 angular.module('pioApp').controller('DeleteModalCtrl', function($scope, $modalInstance, FAQ, id) {
-  $scope.deleteQuestion = function () {
-      FAQ.remove(id);
-      $modalInstance.close();
-  };
+    $scope.deleteQuestion = function () {
+        FAQ.remove(id);
+        $modalInstance.close();
+    };
 });
