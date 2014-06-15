@@ -34,8 +34,4 @@ var ModalInstanceCtrl = function ($scope, $modalInstance) {
   $scope.ok = function () {
     alert($scope.text);
   };
-
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
 };
