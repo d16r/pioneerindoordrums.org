@@ -1,6 +1,5 @@
 <div class="row" ng-controller="AuditionCtrl">
-    <div class="col-md-4 col-md-offset-2">
-        <h1>Register</h1><br><br>
+    <div class="col-md-4 col-md-offset-1">
         <div ng-show="registrationComplete" class="alert alert-success">Congratulations! You are all registered. See you at auditions!</div>
         <form ng-hide="registrationComplete" novalidate ng-submit="submitAuditionForm()" name="form">
             <div class="row">
@@ -51,9 +50,7 @@
             <input ng-disabled="form.$invalid" type="submit" class="btn btn-lg btn-primary" />
         </form>
     </div>
-    <div class="col-md-4 ">
-        <h1>Audition Information</h1><br>
-
+    <div class="col-md-4 col-md-offset-1">
         <h3>When is it?</h3>
         <p>November 9th, 2014. 8:30am-7pm</p>
         <h3>Where is it?</h3>
