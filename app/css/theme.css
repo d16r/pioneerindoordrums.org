@@ -418,65 +418,65 @@ body .fus-btns .btn {
   text-align: center;
 }
 
-.fus-pricing {
+.fus-faq {
   color: white;
 }
 
-.fus-pricing .fus-overlay {
+.fus-faq .fus-overlay {
   opacity: 0.4;
 }
 
-.fus-pricing .fus-pricing-table {
+.fus-faq .fus-faq-table {
   display: table;
   width: 100%;
 }
 
 
-.fus-pricing .fus-pricing-table > [class*="col-"].fus-notfocus .media-list {
+.fus-faq .fus-faq-table > [class*="col-"].fus-notfocus .media-list {
   width:90%;
   padding: 15px;
 }
 
 
-.fus-pricing .fus-pricing-table > [class*="col-"] {
+.fus-faq .fus-faq-table > [class*="col-"] {
   display: table-cell;
   vertical-align: middle;
   float: none;
 }
 
-.fus-pricing .fus-pricing-table .media-list {
+.fus-faq .fus-faq-table .media-list {
   background: rgba(0,0,0,0.25);
   padding: 25px;
 }
 
-.fus-pricing .fus-pricing-table .media-list .media-list-item {
+.fus-faq .fus-faq-table .media-list .media-list-item {
   background: none;
   border: none;
   text-align: left;
   padding: 10px 10px;
 }
 
-.fus-pricing .fus-pricing-table .media-list .media.disabled{
+.fus-faq .fus-faq-table .media-list .media.disabled{
 
   text-decoration: line-through;
 }
 
-.fus-pricing .fus-pricing-table .media-list .media .media-object {
+.fus-faq .fus-faq-table .media-list .media .media-object {
   padding: 50px;
   font-size: 22px;
   font-weight: 400;
   padding: 18px 8px;
 }
 
-.fus-pricing .fus-pricing-table .media-list .media .media-object.glyphicon-ok-circle {
+.fus-faq .fus-faq-table .media-list .media .media-object.glyphicon-ok-circle {
   color: #D6DE23;
 }
 
-.fus-pricing .fus-pricing-table .media-list .media .media-object.glyphicon-remove-circle {
+.fus-faq .fus-faq-table .media-list .media .media-object.glyphicon-remove-circle {
   color: #FFA1AE;
 }
 
-.fus-pricing .fus-pricing-table .media-list .media .media-heading {
+.fus-faq .fus-faq-table .media-list .media .media-heading {
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
@@ -485,7 +485,7 @@ body .fus-btns .btn {
   margin-bottom: 7px;
 }
 
-.fus-pricing .fus-pricing-table .media-list .media .media-text {
+.fus-faq .fus-faq-table .media-list .media .media-text {
   font-family: georgia;
   font-weight: 400;
   font-size: 13px;
@@ -496,7 +496,7 @@ body .fus-btns .btn {
   color: white;
 }
 
-.fus-pricing .fus-pricing-table .fus-list-header h5 {
+.fus-faq .fus-faq-table .fus-list-header h5 {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -505,13 +505,13 @@ body .fus-btns .btn {
   margin: 0;
 }
 
-.fus-pricing .fus-pricing-table .fus-list-header p {
+.fus-faq .fus-faq-table .fus-list-header p {
   font-size: 44px;
   font-weight: 100;
   text-align: center;
 }
 
-.fus-pricing .fus-pricing-table .fus-list-header small {
+.fus-faq .fus-faq-table .fus-list-header small {
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
@@ -599,12 +599,6 @@ body .fus-nobtn:hover {
   color: white;
 }
 
-
-.fus-about .thumbnail .caption .fus-socials {
-  color: white;
-  font-size: 15px;
-}
-
 footer ul {
   text-align: center;
 }
@@ -669,7 +663,7 @@ body.fus-black .navbar.fus-navbar-solid {
   body .jumbotron .fus-bg {
     position: absolute;
   }
-  body #pricing {
+  body #faq {
     background: url("../images/jumbotron.jpg") center center no-repeat;
     background-size: cover;
   }
@@ -731,19 +725,19 @@ body.fus-black .navbar.fus-navbar-solid {
     max-width: 100%;
   }
   
-  body .fus-pricing .fus-pricing-table > [class*="col-"] {
+  body .fus-faq .fus-faq-table > [class*="col-"] {
     display: block;
     width: 100%;
     margin-bottom: 25px;
     float: left;
   }
   
-  body .fus-pricing .fus-pricing-table > [class*="col-"].fus-notfocus .media-list {
+  body .fus-faq .fus-faq-table > [class*="col-"].fus-notfocus .media-list {
     width: 100%;
     padding: 25px;
   }
   
-  body .fus-pricing .fus-pricing-table {
+  body .fus-faq .fus-faq-table {
     display: block;
     margin: 0;
     width: 100%;
