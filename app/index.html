@@ -1,6 +1,9 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="en" ng-app="pioApp" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -527,6 +530,48 @@
 
       ga('create', 'UA-51914112-1');
     </script>
+    
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
+    <script src="bower_components/angularfire/angularfire.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/jquery-waypoints/waypoints.js"></script>
+    <script src="bower_components/angulartics/src/angulartics.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="bower_components/angulartics/src/angulartics-ga.js"></script>
+        <script src="bower_components/showdown/src/showdown.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/filters/markdown.js"></script>
+        <script src="scripts/controllers/audition.js"></script>
+        <script src="scripts/controllers/auditionees.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/faqs.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/staff.js"></script>
+        <script src="scripts/services/auth.js"></script>
+        <script src="scripts/services/auditionees.js"></script>
+        <script src="scripts/services/faqs.js"></script>
+        <!-- endbuild -->
     
   </body>
 </html>
