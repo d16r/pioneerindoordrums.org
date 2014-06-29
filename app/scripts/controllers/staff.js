@@ -1,6 +1,4 @@
-angular.module('pioApp').controller('StaffCtrl', function ($scope, Page) {
-    Page.setTitle('Pioneer Indoor - Staff');
-
+angular.module('pioApp').controller('StaffCtrl', function ($scope) {
     $scope.search = {};
     $scope.highlightFilterIcon = function(section) {
         $scope.search.tags = $scope.search.tags === section ? '' : section;

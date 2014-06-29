@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('pioApp').controller('AuditionCtrl', function ($scope, $cookies, Auditionee, Page) {
-    Page.setTitle("Pioneer Indoor - Auditions");
+angular.module('pioApp').controller('AuditionCtrl', function ($scope, $cookies, Auditionee) {
 
     $scope.registrationComplete = $cookies.hasRegistered;
     $scope.instruments = ['Snare', 'Tenors', 'Bass Drum', 'Cymbals', 'Front Ensemble'];

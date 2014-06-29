@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('pioApp').controller('ContactCtrl', function ($scope, $http, Page) {
-    Page.setTitle('Pioneer Indoor - Contact');
+angular.module('pioApp').controller('ContactCtrl', function ($scope, $http) {
 
     $scope.sendContactForm = function() {
         $scope.message = 'Thanks! Your message was sent. We will get back to you ASAP!';

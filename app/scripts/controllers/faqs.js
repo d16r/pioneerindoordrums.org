@@ -1,8 +1,6 @@
 'use strict';
 
-angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ, Page) {
-    Page.setTitle('Pioneer Indoor - FAQs')
-
+angular.module('pioApp').controller('FAQCtrl', function ($scope, $modal, FAQ) {
     $scope.faqs = FAQ.all;
     
     $scope.showDeleteModal = function(id) {
