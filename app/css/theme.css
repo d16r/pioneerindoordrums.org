@@ -605,16 +605,6 @@ body .fus-nobtn:hover {
   font-size: 15px;
 }
 
-.fus-as-seen {
-  text-align: center;
-  padding-bottom: 15px;
-}
-
-.fus-as-seen > a {
-  display: inline-block;
-  margin: 0 10px; 
-}
-
 footer ul {
   text-align: center;
 }
@@ -772,10 +762,6 @@ body.fus-black .navbar.fus-navbar-solid {
     display: block;
     margin: 0;
     width: 100%;
-  }
-  
-  body .fus-as-seen > a {
-    margin-bottom: 10px;
   }
   
   body .fus-tab-content > .tab-pane > .row > [class*="col-"].fus-photo img {
