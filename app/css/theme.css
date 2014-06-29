@@ -635,21 +635,6 @@ footer .footer-brand {
   line-height: 75%;
 }
 
-footer .credit {
-  margin: 40px 0 30px;
-}
-
-footer .credit p {
-  font-style: italic;
-  font-family: georgia;
-  font-size: 12px;
-}
-footer .credit a {
-  color: white;
-  font-weight: bold;
-}
-
-
 /* Black */
 body.fus-black .fus-overlay, body.fus-black .fus-tabs li.active a .glyphicon {
   background: #333;

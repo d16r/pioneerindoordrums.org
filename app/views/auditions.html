@@ -1,76 +1,78 @@
-<div class="row" ng-controller="AuditionCtrl">
-    <div class="col-md-4 col-md-offset-1">
-        <div ng-show="registrationComplete" class="alert alert-success">Congratulations! You are all registered. See you at auditions!</div>
-        <form ng-hide="registrationComplete" novalidate ng-submit="submitAuditionForm()" name="form">
-            <div class="row">
-                <div class="col-md-5 form-group" ng-class="{ 'has-error': form.firstName.$invalid && !form.firstName.$pristine }">
-                    <label class="control-label" for="firstName">First Name *</label>
-                    <input type="text" class="form-control" name="firstName" ng-model="auditionee.firstName" ng-minLength="2" required />
-                </div>
-                <div class="col-md-7 form-group" ng-class="{ 'has-error': form.lastName.$invalid && !form.lastName.$pristine }">
-                    <label class="control-label" for="lastName">Last Name *</label>
-                    <input type="text" class="form-control" name="lastName" ng-model="auditionee.lastName" ng-minLength="2" required />
-                </div>
-            </div><br>
-
-            <div class="row">
-                <div class="col-md-12 form-group" ng-class="{ 'has-error': form.email.$invalid && !form.email.$pristine }">
-                    <label class="control-label" for="email">Email *</label>
-                    <input type="email" class="form-control" name="email" ng-model="auditionee.email" required />
-                </div>
-            </div><br>
-
-            <div class="row">
-                <div class="col-md-5 form-group" ng-class="{ 'has-error': form.city.$invalid && !form.city.$pristine }">
-                    <label class="control-label" for="city">City *</label>
-                    <input type="text" class="form-control" name="city" ng-model="auditionee.city" required />
-                </div>
-                <div class="col-md-7 form-group" ng-class="{ 'has-error': form.state.$invalid && !form.state.$pristine }">
-                    <label class="control-label" for="state">State *</label>
-                    <select class="form-control" ng-model="auditionee.state" ng-options="state for state in states" required>
-                    </select>
-                </div>
-            </div><br>
-
-            <div class="row">
-                <div class="col-md-12 form-group" ng-class="{ 'has-error': form.instruments.$invalid && !form.instruments.$pristine }">
-                    <label class="control-label" for="instruments">Instruments *</label>
-                    <select multiple class="form-control" ng-model="auditionee.instruments" ng-options="instrument for instrument in instruments" required>
-                    </select>
-                </div>
-            </div><br>
-
-            <div class="row">
-                <div class="col-md-12 form-group">
-                    <label class="control-label" for="specialTalents">Special Talents</label>
-                    <textarea rows="4" class="form-control" name="specialTalents" placeholder=" Juggling,Unicycle,Flips.." ng-model="auditionee.specialTalents" />
-                </div>
-            </div><br>
-
-            <input ng-disabled="form.$invalid" type="submit" class="btn btn-lg btn-primary" />
-        </form>
+<div id="auditions" class="fus-section fus-auditions fus-white-bg">
+  <div class="container">
+    <div class="fus-section-header">
+      <h3>Audition for the 2014-2015 Season</h3>
+      <h4>Find all the information you need to be at auditions.</h4>
     </div>
-    <div class="col-md-4 col-md-offset-1">
-        <h3>When is it?</h3>
-        <p>November 9th, 2014. 8:30am-7pm</p>
-        <h3>Where is it?</h3>
-        <p>Romeoville High School<br>100 N Independence Blvd.<br>Romeoville, IL 60446</p>
-        <h3>What should I bring?</h3>
-        <ul>
-            <li>$30 (Audition Fee)</li>
-            <li>Sticks/Mallets</li>
-            <li>Audition Music</li>
-            <li>Comfortable clothing.</li>
-        </ul>
-        <h3>What should I have prepared?</h3>
-        <p>The battery packet is <a href="http://pioneerindoordrums.org/uploads/PIO_Technique_Exercises_12.pdf">here</a>.</p>
-        <p>The Front Ensemble doesn't have a packet. Come prepared with the following things:</p>
-        <ul>
-            <li>Major/Minor Scales</li>
-            <li>A 2/4 mallet piece that showcases your technique, chops.</li>
-            <li>Any exercises you are comfortable playing</li>
-        </ul>
+    <div class="row" ng-controller="AuditionCtrl">
+        <div class="col-md-4 col-md-offset-1">
+            <div ng-show="registrationComplete" class="alert alert-success">Congratulations! You are all registered. See you at auditions!</div>
+            <form ng-hide="registrationComplete" novalidate ng-submit="submitAuditionForm()" name="form">
+                <div class="row">
+                    <div class="col-md-5 form-group" ng-class="{ 'has-error': form.firstName.$invalid && !form.firstName.$pristine }">
+                        <label class="control-label" for="firstName">First Name *</label>
+                        <input type="text" class="form-control" name="firstName" ng-model="auditionee.firstName" ng-minLength="2" required />
+                    </div>
+                    <div class="col-md-7 form-group" ng-class="{ 'has-error': form.lastName.$invalid && !form.lastName.$pristine }">
+                        <label class="control-label" for="lastName">Last Name *</label>
+                        <input type="text" class="form-control" name="lastName" ng-model="auditionee.lastName" ng-minLength="2" required />
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-12 form-group" ng-class="{ 'has-error': form.email.$invalid && !form.email.$pristine }">
+                        <label class="control-label" for="email">Email *</label>
+                        <input type="email" class="form-control" name="email" ng-model="auditionee.email" required />
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-5 form-group" ng-class="{ 'has-error': form.city.$invalid && !form.city.$pristine }">
+                        <label class="control-label" for="city">City *</label>
+                        <input type="text" class="form-control" name="city" ng-model="auditionee.city" required />
+                    </div>
+                    <div class="col-md-7 form-group" ng-class="{ 'has-error': form.state.$invalid && !form.state.$pristine }">
+                        <label class="control-label" for="state">State *</label>
+                        <select class="form-control" ng-model="auditionee.state" ng-options="state for state in states" required>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-12 form-group" ng-class="{ 'has-error': form.instruments.$invalid && !form.instruments.$pristine }">
+                        <label class="control-label" for="instruments">Instruments *</label>
+                        <select multiple class="form-control" ng-model="auditionee.instruments" ng-options="instrument for instrument in instruments" required>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label class="control-label" for="specialTalents">Special Talents</label>
+                        <textarea rows="4" class="form-control" name="specialTalents" placeholder=" Juggling,Unicycle,Flips.." ng-model="auditionee.specialTalents" />
+                    </div>
+                </div><br>
+                <input ng-disabled="form.$invalid" type="submit" class="btn btn-lg btn-primary" />
+            </form>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+            <h3>When is it?</h3>
+            <p>November 9th, 2014. 8:30am-7pm</p>
+            <h3>Where is it?</h3>
+            <p>Romeoville High School<br>100 N Independence Blvd.<br>Romeoville, IL 60446</p>
+            <h3>What should I bring?</h3>
+            <ul>
+                <li>$30 (Audition Fee)</li>
+                <li>Sticks/Mallets</li>
+                <li>Audition Music</li>
+                <li>Comfortable clothing.</li>
+            </ul>
+            <h3>What should I have prepared?</h3>
+            <p>The battery packet is <a href="http://pioneerindoordrums.org/uploads/PIO_Technique_Exercises_12.pdf">here</a>.</p>
+            <p>The Front Ensemble doesn't have a packet. Come prepared with the following things:</p>
+            <ul>
+                <li>Major/Minor Scales</li>
+                <li>A 2/4 mallet piece that showcases your technique, chops.</li>
+                <li>Any exercises you are comfortable playing</li>
+            </ul>
+        </div>
     </div>
+    <br />
+  </div>
 </div>
-
-<br />
