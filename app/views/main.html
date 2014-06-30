@@ -1,7 +1,73 @@
-<div class="col-md-10 col-md-offset-1">
-    <div class="row">
-        <div class="jumbotron">
-          <h1>2014 WGI Silver Medalists</h1>
-        </div>
+<!-- Fixed navbar -->
+<div class="navbar navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand scrollto" href="#top">Pioneer Indoor</a>
     </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a class="scrollto" href="#top">Home</a></li>
+        <li><a class="scrollto" href="#about">About</a></li>
+        <li><a class="scrollto" href="#faq">FAQs</a></li>
+        <li><a class="scrollto" href="#auditions">Audition</a></li>
+        <li><a class="scrollto" href="#staff">Staff</a></li>
+        <li><a class="scrollto" href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
 </div>
+
+<div class="fus-options">
+  <ul class="list-inline" id="select-options">
+    <li><a href="http://www.thepetedesign.com/#plugins" target="_blank">Built by The Pete Design</a></li>
+    <li class="active"><a href="#blue" class="color" style="background: #00BBFC;">Blue</a></li>
+    <li><a href="#black" class="color" style="background: #333;">Black</a></li>
+  </ul>
+</div>
+
+<!-- Main component for a primary marketing message or call to action -->
+<div id="top" class="jumbotron">
+  <div class="fus-bg"></div>
+  <div class="fus-overlay"></div>
+  <div class="container">
+    <div class="fus-pitch">
+      <div class="fus-call-to-action">
+        <h1>Pioneer Indoor Percussion Ensemble</h1>
+        <h2>The 2014 WGI P.I.O. Silver Medalists</h2>
+        <div class="fus-btns">
+          <a href="#about" class="scrollto btn fus-btn-white">Learn More</a>
+          <a href="#auditions" class="scrollto btn btn-primary">Register for Auditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div ng-include="'views/about.html'"></div>
+
+<div ng-include="'views/faqs.html'"></div>
+
+<div ng-include="'views/auditions.html'"></div>
+
+<div ng-include="'views/staff.html'"></div>
+
+<div ng-include="'views/contact.html'"></div>
+
+<footer class="fus-section"> 
+  <div class="fus-overlay"></div>
+  <div class="container">
+    <ul class="list-inline">
+      <li><a class="scrollto" href="#about">About</a></li>
+      <li><a class="scrollto" href="#auditions">Audition</a></li>
+      <li><a class="scrollto" href="#contact">Contact</a></li>
+      <li><a href="#/give">Give</a></li>
+      <li><a href="#/login">Login</a></li>
+    </ul>
+  </div>
+</footer>
