@@ -6,7 +6,8 @@ var app = angular.module('pioApp', ['ngCookies',
                                     'ngRoute',
                                     'firebase',
                                     'angulartics',
-                                    'angulartics.google.analytics'
+                                    'angulartics.google.analytics',
+                                    'ui.bootstrap'
                                     ]);
 
 app.config(function ($routeProvider, $httpProvider) {

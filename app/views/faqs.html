@@ -1,21 +1,22 @@
-<div class="row">
-    <div class="col-md-10 col-md-offset-1">
-        <div class="jumbotron">
-          <h1>Frequently Asked Questions</h1>
-          <p>The purpose of this page is to answer any questions you might have
-              about the ensemble. If there is a question that isn't answered here,
-              feel free to contact us!</p>
-        </div>
-    </div>
-</div>
-
 <div class="row" ng-controller="FAQCtrl">
-    <div class="col-md-5 col-md-offset-1">
-        <div ng-repeat="faq in faqs">
-            <h3>{{ faq.question }}</h3>
-            <p ng-bind-html="faq.answer | markdown"></p>
+    <div id="faq" class="fus-section fus-faq">
+      <div class="container">
+        <div class="fus-section-header">
+          <h3>Frequently Asked Questions</h3>
+          <h4>Everything you need to know about the group, rehearsal schedules, and what it takes to be a part of the group.</h4>
         </div>
+        
+        <div class="row fus-faq-table">
+          <div ng-repeat="faq in faqs" class="col-md-4 fus-notfocus">
+            <ul class="media-list pull-right">
+              <li class="fus-list-header">
+                <h5>{{ faq.question }}</h5>
+                <p ng-bind-html="faq.answer | markdown"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
 </div>
-
-<br/>
