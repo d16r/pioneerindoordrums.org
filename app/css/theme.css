@@ -258,6 +258,10 @@ body .fus-btns .btn {
   padding: 10px 20px;
 }
 
+.fa {
+  color: white;
+}
+
 .fus-section, .fus-section > .container {
   position: relative;
 }
