@@ -1,16 +1,4 @@
-$(window).load(function(){
-  $(".zoom-images").zoomScroller({
-    animationTime: 2000,
-    easing: "ease",
-    initZoom: 1.15,
-    zoom: 1
-  });
-});
-
 $(document).ready(function() {
-  
-  $("body").addClass("js");
-  
   $("a.scrollto").click(function(e) {
     e.preventDefault();
     var el = $($(this).attr("href"));
