@@ -16,12 +16,13 @@
         </ul><br><br>
         
         <div class="row">
-            <div class="col-md-6 col-md-4" ng-repeat="member in staffMembers | filter:search:strict">
+            <div class="col-md-4" ng-repeat="member in staffMembers | filter:search:strict">
               <div class="zoom-images thumbnail fus-text-on-top">
                 <img src="images/placeholder6.jpg">
                 <div class="caption">
                   <h3>{{ member.name }}</h3>
-                  <p>{{ member.bio }}</p>
+                  <p>{{ member.bio | cut:true:225:' ...'}}</p>
+                  <a>Show more</a>
                 </div>
               </div>
             </div>
