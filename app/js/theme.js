@@ -20,13 +20,6 @@ $(document).ready(function() {
     }, 1000);
   });
   
-  $("#select-options a").click(function(e) {
-    $("#select-options li").removeClass("active");
-    $(this).parent().addClass("active");
-    $("body").attr("class", "");
-    $("body").addClass("fus-" + $(this).attr("href").substring(1));
-  });
-  
   $(window).scroll(function () {
 
   		if ($(this).scrollTop() > 695) {
