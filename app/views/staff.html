@@ -8,7 +8,6 @@
         <ul class="nav nav-tabs fus-tabs">
             <li ng-repeat="section in sections" ng-class="{'active':search.tags === section}">
                 <a href="" ng-click="highlightFilterIcon(section)">
-                    <span ng-show="search.tags === section" class="glyphicon glyphicon-remove" />
                     <span class="glyphicon glyphicon-home"></span>
                     <span class="fus-subtitle">{{ section }}</span>
                 </a>
