@@ -25,7 +25,6 @@
 
   	<link rel="canonical" href="http://www.pioneerindoordrums.org" />
   	
-  	<link rel="stylesheet" href="css/animate.css">
   	<meta name="HandheldFriendly" content="true" />
   
     <!-- Bootstrap core CSS -->
@@ -34,74 +33,8 @@
   </head>
 
   <body class="fus-black">
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#top" du-smooth-scroll duration="1000">Pioneer Indoor</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about" du-smooth-scroll duration="1000">About</a></li>
-            <li><a href="#faq" du-smooth-scroll duration="1000">FAQs</a></li>
-            <li><a href="#auditions" du-smooth-scroll duration="1000">Audition</a></li>
-            <li><a class="hidden-xs" href="#staff" du-smooth-scroll duration="1000">Staff</a></li>
-            <li><a href="#contact" du-smooth-scroll duration="1000">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div><!--/.container -->
+    <div ng-view="">
     </div>
-
-    <!-- Main component for a primary marketing message or call to action -->
-    <div id="top" class="jumbotron">
-      <div class="fus-bg"></div>
-      <div class="fus-overlay"></div>
-      <div class="container">
-        <div class="fus-pitch">
-          <div class="fus-call-to-action">
-            <h1>Pioneer Indoor Percussion Ensemble</h1>
-            <h2>The 2014 WGI P.I.O. Silver Medalists</h2>
-            <div class="fus-btns">
-              <a href="#about" class="btn fus-btn-white" du-smooth-scroll duration="1000">Learn More</a>
-              <a href="#auditions" class="btn btn-primary" du-smooth-scroll duration="1000">Register for Auditions</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div ng-include="'views/about.html'"></div>
-    
-    <div ng-include="'views/faqs.html'"></div>
-    
-    <div ng-include="'views/auditions.html'"></div>
-    
-    <div ng-include="'views/staff.html'"></div>
-    
-    <div ng-include="'views/contact.html'"></div>
-    
-    <footer class="fus-section"> 
-      <div class="fus-overlay"></div>
-      <div class="container">
-        <ul class="list-inline">
-          <li><a href="#about" du-smooth-scroll du-scrollspy offset="30">About</a></li>
-          <li><a href="#auditions" du-smooth-scroll du-scrollspy offset="30">Audition</a></li>
-          <li><a href="#contact" du-smooth-scroll du-scrollspy offset="30">Contact</a></li>
-          <li><a href="#/give">Give</a></li>
-          <li><a href="#/login">Login</a></li>
-        </ul>
-      </div>
-    </footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/theme.js"></script>
     
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
