@@ -489,17 +489,6 @@ body .fus-btns .btn {
   margin-bottom: 7px;
 }
 
-.fus-faq .fus-faq-table .media-list .media .media-text {
-  font-family: georgia;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 140%;
-  margin: 0 0 0 0;
-  font-style: italic;
-  letter-spacing: 0px;
-  color: white;
-}
-
 .fus-faq .fus-faq-table .fus-list-header h5 {
   font-size: 20px;
   font-weight: bold;
@@ -511,13 +500,6 @@ body .fus-btns .btn {
 .fus-faq .fus-faq-table .fus-list-header p {
   font-size: 17px;
   font-weight: 100;
-}
-
-.fus-faq .fus-faq-table .fus-list-header small {
-  font-size: 13px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
   
 .thumbnail {
@@ -544,10 +526,6 @@ body .fus-btns .btn {
   margin: 0 0 7px 0;
 }
 
-.thumbnail .caption h3 a {
-  color: #333;
-}
-
 .thumbnail .caption p {
   font-family: georgia;
   font-weight: 400;
@@ -558,47 +536,9 @@ body .fus-btns .btn {
   letter-spacing: 0px;
 }
 
-
-body .fus-nobtn {
-  border: none;
-  font-style: normal;
-  -o-border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  padding:5px 0;
-  border-bottom: 2px solid transparent;
-}
-
-body .fus-nobtn:hover {
-  border-bottom: 2px solid #333;
-  background: none;
-  color: #333;
-}
-
 .fus-about {
   background: url("../images/placeholder7.jpg") center center no-repeat;
   background-size: cover;
-}
-
-.fus-about .thumbnail {
-  background-size: cover;
-  position: relative;
-  border: none;
-}
-
-.fus-about  .thumbnail.fus-text-on-top .caption {
-  color: white;
-  padding-top: 250px;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, 0.69)));
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.69) 90%);
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.69) 90%);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.69) 90%);
-  background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.69) 90%);
-}
-
-.fus-about  .thumbnail.fus-text-on-top .caption a{
-  color: white;
 }
 
 .staff-name {
