@@ -10,7 +10,7 @@
           <div ng-repeat="faq in faqs" class="col-md-4 fus-notfocus">
             <ul class="media-list pull-right">
               <li class="fus-list-header">
-                <h5>{{ faq.question }}</h5>
+                <h5>{{ faq.question }}</h5><br />
                 <p ng-bind-html="faq.answer | markdown"></p>
               </li>
             </ul>

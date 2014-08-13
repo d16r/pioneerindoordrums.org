@@ -501,18 +501,16 @@ body .fus-btns .btn {
 }
 
 .fus-faq .fus-faq-table .fus-list-header h5 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-align: center;
   margin: 0;
 }
 
 .fus-faq .fus-faq-table .fus-list-header p {
-  font-size: 44px;
+  font-size: 17px;
   font-weight: 100;
-  text-align: center;
 }
 
 .fus-faq .fus-faq-table .fus-list-header small {
