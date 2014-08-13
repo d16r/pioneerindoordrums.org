@@ -1,8 +1,10 @@
-<br>
+<br />
+
 <div class="row">
     <button type="button" ng-click="showCreateUpdateModal()" class="btn btn-success">Create a New Question
     </button>
-</div><br>
+</div><br />
+
 <div class="row">
     <table class="table table-striped">
         <thead>
@@ -15,12 +17,12 @@
         <tbody>
             <tr ng-repeat="(id, faq) in faqs">
                 <td>{{ faq.question }}</td>
-                <td>{{ faq.answer }}</td>
+                <td>{{ faq.answer | cut:true:75:' ...' }}</td>
                 <td>
-                    <button type="button" class="btn btn-primary" ng-click="showCreateUpdateModal(id, faq)">
+                    <button type="button" class="btn btn-sm btn-primary" ng-click="showCreateUpdateModal(id, faq)">
                          <span class="glyphicon glyphicon-pencil"></span>
                     </button>
-                    <button type="button" class="btn btn-danger" ng-click="showDeleteModal(id)">
+                    <button type="button" class="btn btn-sm btn-danger" ng-click="showDeleteModal(id)">
                          <span class="glyphicon glyphicon-trash"></span>
                     </button>
                 </td>

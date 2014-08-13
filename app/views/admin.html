@@ -1,17 +1,25 @@
-<div class="col-md-10 col-md-offset-1">
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-target="#auditionees" data-toggle="tab">Auditionees</a></li>
-        <li><a data-target="#faq" data-toggle="tab">FAQ Questions</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div class="tab-pane active" id="auditionees">
-            <div ng-include="'views/admin/auditionees.html'" ng-controller="AuditioneesCtrl"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>Welcome to the Admin Panel</h1>
         </div>
-        <div class="tab-pane" id="faq" ng-controller='FAQCtrl'>
-            <div ng-include="'views/admin/faqs.html'"></div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-target="#auditionees" data-toggle="tab">Auditionees</a></li>
+                <li><a data-target="#faq" data-toggle="tab">FAQ Questions</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="auditionees">
+                    <div ng-include="'views/admin/auditionees.html'" ng-controller="AuditioneesCtrl"></div>
+                </div>
+                <div class="tab-pane" id="faq" ng-controller='FAQCtrl'>
+                    <div ng-include="'views/admin/faqs.html'"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
- 

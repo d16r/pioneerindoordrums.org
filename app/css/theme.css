@@ -601,6 +601,14 @@ body .fus-nobtn:hover {
   color: white;
 }
 
+.staff-name {
+    color: black;
+}
+
+.staff-bio {
+    color: black;
+}
+
 footer ul {
   text-align: center;
 }

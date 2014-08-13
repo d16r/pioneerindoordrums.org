@@ -1,8 +1,23 @@
-angular.module('pioApp').controller('StaffCtrl', function ($scope) {
+angular.module('pioApp').controller('StaffCtrl', function ($scope, $modal) {
     $scope.search = {};
     $scope.highlightFilterIcon = function(section) {
         $scope.search.tags = $scope.search.tags === section ? '' : section;
-      };
+    };
+    
+    $scope.showStaffModal = function(name, position, bio) {
+        var bioScope = $scope.$new(true);
+        bioScope.name = name;
+        bioScope.bio = bio;
+        bioScope.position = position;
+        
+        var modalInstance = $modal.open({
+          templateUrl: 'staffModal.html',
+          scope: bioScope
+        });
+    }
+    
+    
+    
     $scope.sections = ['Design Staff', 'Visual', 'Battery', 'Front Ensemble'];
     $scope.staffMembers = [
       {
