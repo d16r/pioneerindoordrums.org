@@ -129,49 +129,6 @@ body .btn-primary:hover {
   border-color: #00BBFC;
 }
 
-body .fus-options {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
-  background: rgba(51, 51, 51, 0.71);
-  color: white;
-  padding: 10px;
-}
-
-body .fus-options li {
-  float: left;
-}
-
-body .fus-options li:first-child a {
-  padding:4px 10px;
-}
-
-body .fus-options a {
-  font-family: georgia;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 140%;
-  color: white;
-  display: inline-block;
-}
-
-body .fus-options a.color {
-  text-indent: -9999999px;
-  width: 25px;
-  height: 25px;
-  overflow: hidden;
-  border: 2px solid transparent;
-  border-radius: 50px;
-  -o-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-}
-
-body .fus-options .active a.color {
-  border-color: white;
-}
-
 body .jumbotron {
   border-radius: 0;
   height: 750px;
@@ -262,6 +219,10 @@ body .fus-btns .btn {
   color: white;
 }
 
+.faq-question {
+    height: 250px;
+}
+
 .fus-section, .fus-section > .container {
   position: relative;
 }
@@ -281,7 +242,7 @@ body .fus-btns .btn {
 
 .fus-section .fus-section-header {
  padding: 35px 0; 
- margin-bottom: 35px;
+ margin-bottom: 15px;
  text-align: center;
 }
 
@@ -380,46 +341,6 @@ body .fus-btns .btn {
   display: block;
   font-size: 12px;
   margin-top: 10px;
-}
-
-.fus-tab-content {
-  padding: 35px 0;
-  margin: 35px 0;
-}
-
-.fus-tab-content p {
-  color: #808184;
-  font-size: 18px;
-  line-height: 140%;
-  margin-bottom: 25px;
-}
-
-
-.fus-tab-content > .tab-pane > .row {
-  display: table;
-  vertical-align: middle;
-}
-
-.fus-tab-content > .tab-pane > .row > [class*="col-"] {
-  display: table-cell;
-  vertical-align: middle;
-  float: none;
-}
-
-.fus-tab-content > .tab-pane > .row > [class*="col-"].fus-photo {
-  text-align: center;
-}
-
-.fus-tab-content > .tab-pane > .row > [class*="col-"].fus-photo img{
-  max-width: 400px;
-}
-
-.fus-tab-content > .tab-pane > .row > .fus-fullwidth-content {
-  text-align: center;
-}
-
-.fus-tab-content > .tab-pane > .row > .fus-fullwidth-content .fus-header {
-  text-align: center;
 }
 
 .fus-faq {
