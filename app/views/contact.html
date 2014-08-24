@@ -9,11 +9,11 @@
             <div class="alert" ng-class="{ 'alert-danger': error, 'alert-success': success}" ng-show="message">{{ message }}</div>
             <form ng-hide="message" ng-submit="sendContactForm()" novalidate name="contactForm">
                 <div class="row">
-                    <div class="col-md-5" ng-class="{ 'has-error': contactForm.firstName.$invalid && !contactForm.firstName.$pristine }">
+                    <div class="col-md-5 col-sm-6 col-xs-6" ng-class="{ 'has-error': contactForm.firstName.$invalid && !contactForm.firstName.$pristine }">
                         <label class="control-label" for="firstName">First Name *</label>
                         <input class="form-control" type="text" name="firstName" ng-model="contact.firstName" ng-minLength="2" required>
                     </div>
-                    <div class="col-md-7" ng-class="{ 'has-error': contactForm.lastName.$invalid && !contactForm.lastName.$pristine }">
+                    <div class="col-md-7 col-sm-6 col-xs-6" ng-class="{ 'has-error': contactForm.lastName.$invalid && !contactForm.lastName.$pristine }">
                         <label class="control-label" for="lastName">Last Name *</label>
                         <input class="form-control" type="text" name="lastName" ng-model="contact.lastName" ng-minLength="2" required>
                     </div>
@@ -24,7 +24,7 @@
                         <input class="form-control" type="email" name="email" ng-model="contact.email" ng-minLength="5" required>
                     </div>
                 </div><br>
-                
+
                 <div class="row">
                     <div class="col-md-12" ng-class="{ 'has-error': contactForm.subject.$invalid && !contactForm.subject.$pristine }">
                         <label class="control-label" for="subject">Subject *</label>
@@ -43,4 +43,4 @@
     </div>
   </div>
 </div>
-    
+

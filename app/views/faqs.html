@@ -5,18 +5,12 @@
           <h3>Frequently Asked Questions</h3>
           <h4>Everything you need to know about the group, rehearsal schedules, and what it takes to be a part of the group.</h4>
         </div>
-        
-        <div class="row fus-faq-table">
-          <div ng-repeat="faq in faqs" class="fus-notfocus">
-                <div class="col-md-4">
-                    <ul class="media-list pull-right faq-question">
-                      <li class="fus-list-header">
-                        <h5>{{ faq.question }}</h5><br />
-                        <p ng-bind-html="faq.answer | markdown"></p>
-                      </li>
-                    </ul>
-                </div>
-          </div>
+
+        <div class="row">
+            <div ng-repeat="faq in faqs" class="col-md-4 col-sm-6 col-xs-12 faq-question">
+                <h3>{{ faq.question }}</h3><br />
+                <p ng-bind-html="faq.answer | markdown"></p>
+            </div>
         </div>
 
       </div>

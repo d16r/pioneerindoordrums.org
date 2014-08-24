@@ -18,7 +18,7 @@ body .navbar.navbar-fixed-top {
 
 body .navbar {
   background: transparent;
-  -webkit-transition: background .4s ease; 
+  -webkit-transition: background .4s ease;
   -moz-transition: background .4s ease;
   -o-transition: background .4s ease;
   transition: background .4s ease;
@@ -55,7 +55,7 @@ body .navbar-nav > li > a {
   border-bottom: 2px solid transparent;
 }
 
-body .navbar-nav > li > a:hover { 
+body .navbar-nav > li > a:hover {
   background: none;
   border-bottom: 2px solid white;
 }
@@ -91,7 +91,7 @@ body .btn {
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  -webkit-transition: all .4s ease; 
+  -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease;
   -o-transition: all .4s ease;
   transition: all .4s ease;
@@ -121,7 +121,7 @@ body .fus-btn-white:hover {
 body .btn-primary {
   color: #fff;
   background: #00BBFC;
-  border-color: #00BBFC; 
+  border-color: #00BBFC;
 }
 
 body .btn-primary:hover {
@@ -155,7 +155,7 @@ body .fus-overlay {
   height: 100%;
   background:#3A92D7;
   opacity: 0.15;
-  -webkit-transition: all .4s ease; 
+  -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease;
   -o-transition: all .4s ease;
   transition: all .4s ease;
@@ -220,7 +220,8 @@ body .fus-btns .btn {
 }
 
 .faq-question {
-    height: 250px;
+    background: rgba(0,0,0,.25);
+    padding: 1px 15px 10px;
 }
 
 .fus-section, .fus-section > .container {
@@ -241,21 +242,21 @@ body .fus-btns .btn {
 
 
 .fus-section .fus-section-header {
- padding: 35px 0; 
+ padding: 35px 0;
  margin-bottom: 15px;
  text-align: center;
 }
 
 
 .fus-section .fus-section-header h3, .fus-section .fus-header h3 {
- font-size: 36px; 
+ font-size: 36px;
  font-weight: 100;
  line-height: 120%;
  margin: 0 0 5px 0;
 }
 
 .fus-section .fus-section-header h4, .fus-section .fus-header h4 {
- font-size: 18px; 
+ font-size: 18px;
  font-family: georgia;
  font-weight: 400;
  line-height: 140%;
@@ -313,7 +314,7 @@ body .fus-btns .btn {
   color: #333;
   margin-right: 0;
   border: none;
-  
+
 }
 .fus-tabs li a:focus {
   outline: none;
@@ -327,7 +328,7 @@ body .fus-btns .btn {
   -o-border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
-  -webkit-transition: background .4s ease; 
+  -webkit-transition: background .4s ease;
   -moz-transition: background .4s ease;
   -o-transition: background .4s ease;
   transition: background .4s ease;
@@ -351,78 +352,6 @@ body .fus-btns .btn {
   opacity: 0.4;
 }
 
-.fus-faq .fus-faq-table {
-  display: table;
-  width: 100%;
-}
-
-
-.fus-faq .fus-faq-table > [class*="col-"].fus-notfocus .media-list {
-  width:90%;
-  padding: 15px;
-}
-
-
-.fus-faq .fus-faq-table > [class*="col-"] {
-  display: table-cell;
-  vertical-align: middle;
-  float: none;
-}
-
-.fus-faq .fus-faq-table .media-list {
-  background: rgba(0,0,0,0.25);
-  padding: 25px;
-}
-
-.fus-faq .fus-faq-table .media-list .media-list-item {
-  background: none;
-  border: none;
-  text-align: left;
-  padding: 10px 10px;
-}
-
-.fus-faq .fus-faq-table .media-list .media.disabled{
-
-  text-decoration: line-through;
-}
-
-.fus-faq .fus-faq-table .media-list .media .media-object {
-  padding: 50px;
-  font-size: 22px;
-  font-weight: 400;
-  padding: 18px 8px;
-}
-
-.fus-faq .fus-faq-table .media-list .media .media-object.glyphicon-ok-circle {
-  color: #D6DE23;
-}
-
-.fus-faq .fus-faq-table .media-list .media .media-object.glyphicon-remove-circle {
-  color: #FFA1AE;
-}
-
-.fus-faq .fus-faq-table .media-list .media .media-heading {
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: left;
-  margin-bottom: 7px;
-}
-
-.fus-faq .fus-faq-table .fus-list-header h5 {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0;
-}
-
-.fus-faq .fus-faq-table .fus-list-header p {
-  font-size: 17px;
-  font-weight: 100;
-}
-  
 .thumbnail {
   border: 1px solid #E6E7E8;
   background: white;
@@ -542,7 +471,7 @@ body.fus-black .navbar.fus-navbar-solid {
   body .fus-tab-content > .tab-pane > .row > [class*="col-"].fus-photo img {
     width: 100%;
   }
-  
+
   body #select-options li:first-child {
     display: none;
   }
@@ -554,7 +483,7 @@ body.fus-black .navbar.fus-navbar-solid {
   }
   body .fus-btns .btn {
     margin-bottom: 15px;
-  } 
+  }
   body.fus-black .navbar-collapse {
     background: rgba(0, 0, 0, 0.43);
   }
@@ -568,50 +497,45 @@ body.fus-black .navbar.fus-navbar-solid {
     background: #FFF;
     height: 4px;
   }
-  
-  
-  
+
+
+
   body .fus-tab-content > .tab-pane > .row > [class*="col-"] {
     display: block;
     width: 100%;
     margin-bottom: 25px;
   }
-  
-  
+
+
   body .fus-tab-content p, body .fus-section .fus-header {
     text-align: center;
   }
-  
+
   body .fus-tab-content .btn {
     display: block;
   }
-  
+
   body .fus-tab-content img {
     max-width: 100%;
   }
-  
+
   body .fus-faq .fus-faq-table > [class*="col-"] {
     display: block;
     width: 100%;
     margin-bottom: 25px;
     float: left;
   }
-  
-  body .fus-faq .fus-faq-table > [class*="col-"].fus-notfocus .media-list {
-    width: 100%;
-    padding: 25px;
-  }
-  
+
   body .fus-faq .fus-faq-table {
     display: block;
     margin: 0;
     width: 100%;
   }
-  
+
   body .fus-tab-content > .tab-pane > .row > [class*="col-"].fus-photo img {
     max-width: 100%;
   }
-  
+
   body footer ul > li > a {
     margin-bottom: 0;
     display: inline-block;

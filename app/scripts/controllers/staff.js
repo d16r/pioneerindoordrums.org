@@ -3,21 +3,21 @@ angular.module('pioApp').controller('StaffCtrl', function ($scope, $modal) {
     $scope.highlightFilterIcon = function(section) {
         $scope.search.tags = $scope.search.tags === section ? '' : section;
     };
-    
+
     $scope.showStaffModal = function(name, position, bio) {
         var bioScope = $scope.$new(true);
         bioScope.name = name;
         bioScope.bio = bio;
         bioScope.position = position;
-        
+
         var modalInstance = $modal.open({
           templateUrl: 'staffModal.html',
           scope: bioScope
         });
     }
-    
-    
-    
+
+
+
     $scope.sections = ['Design Staff', 'Visual', 'Battery', 'Front Ensemble'];
     $scope.staffMembers = [
       {
@@ -30,7 +30,7 @@ angular.module('pioApp').controller('StaffCtrl', function ($scope, $modal) {
       {
         name: 'Don Click',
         tags: ['Design Staff', 'Visual'],
-        position: 'Program Coordinator, Visual Design',
+        position: 'Program Coordinator',
         picture: '/images/donclick.jpg',
         bio: 'Don Click is co-founder of the Music City Mystique youth organization and served as the Executive Director until 2006.  He currently serves on the Board of Directors and is a member of the design team. Don attended the University of North Texas where he earned a degree in Finance. While at UNT, Don spent three years as a member of the UNT indoor drumline. During this time, the drumline won two championships at the Percussive Arts Society International Convention. Don also has deep roots in the Drum and Bugle Corps (DCI) activity. Don was a member of the 1985 Bridgemen, the 1988 Suncoast Sound, and the 1989 Concord Blue Devils.  He has taught and continues to arrange and consult at various high schools throughout the nation and is a sought after judge both for fall marching band competitions as well as Winter Percussion shows. Don has served as President of the Southeastern Color Guard Circuit where he was formerly the Percussion Coordinator. With Winter Guard International, Don has held the responsibilities of being a member of the Percussion Advisory Board, Percussion Steering Committee, and is a current member of the Board of Directors and Executive Committee serving as Secretary.  He was inducted into the Winter Guard International Hall of Fame in 2010. Don currently lives in Katy, TX with his wife, Stephani, and two children, Avery and Piper.'
       },
