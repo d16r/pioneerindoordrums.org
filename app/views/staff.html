@@ -4,7 +4,7 @@
           <h3>Staff</h3>
           <h4>"Some quote from a kid about how great the staff is" - that kid</h4>
         </div>
-        
+
         <ul class="nav nav-tabs fus-tabs">
             <li ng-repeat="section in sections" ng-class="{'active':search.tags === section}">
                 <a href="" ng-click="highlightFilterIcon(section)">
@@ -13,7 +13,7 @@
                 </a>
             </li>
         </ul><br /><br />
-        
+
         <div class="row">
             <div class="col-md-4" ng-repeat="member in staffMembers | filter:search:strict">
               <div class="zoom-images thumbnail fus-text-on-top">

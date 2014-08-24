@@ -494,12 +494,6 @@ footer {
   text-align: center;
 }
 
-footer .footer-brand {
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 75%;
-}
-
 /* Black */
 body.fus-black .fus-overlay, body.fus-black .fus-tabs li.active a .glyphicon {
   background: #333;
