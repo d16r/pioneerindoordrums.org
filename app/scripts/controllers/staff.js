@@ -66,21 +66,21 @@ angular.module('pioApp').controller('StaffCtrl', function ($scope, $modal) {
         name: 'Megan Francomb',
         tags: ['Design Staff', 'Visual'],
         position: 'Visual Caption Head',
-        picture: '/images/meganfrancomb.png',
+        picture: '/images/meganfrancomb.jpg',
         bio: 'Megan Francomb is a Theatre Artist recently relocated to the Chicagoland area. After graduating from Illinois Wesleyan University with B.A. in Theatre Arts and History, she worked with the Finger Lakes Musical Theatre Festival in Auburn, NY. After returning to the Midwest, she Co-Produced and Directed Strip of the Tongue: A Study of Contemporary American Burlesque at Skokie Theatre. Her theatre work is deeply rooted in Laban Movement Analysis (LMA), which is a method and language for describing, visualizing, interpreting and documenting all varieties of human movement. Favorite directing credits include Thrill Me:The Leopold and Loeb Story, The Complete History of America (Abridged), and her own adaptation of Lewis Carroll\'s Alice\'s Adventures in Wonderland entitled Alice\'s Golden Hour. Megan began her marching experience as a member of the Colt Cadets at the age of 12. From 2007-2009 she was a member of the Colts Drum and Bugle Corps Cymbal Line, serving as section leader for two years. She also performed with Gateway Indoor Percussion for their 2009 season. After spending a summer interning with Timberlake Playhouse, in 2011 she returned to the Colts for her age-out. This past summer, she was thrilled to return to the Colts Youth Organization as the Visual/Cymbal Technician for the Colt Cadets. This will be Megan’s first season with Pioneer Indoor.'
       },
       {
         name: 'Tyler Woods',
         tags: ['Visual'],
         position: 'Visual Tech',
-        picture: '/images/tylerwoods.png',
+        picture: '/images/tylerwoods.jpg',
         bio: 'Tyler Woods is currently living in Chicago, IL as a freelance musician and instructor. Aside from his work with Pioneer Indoor, Tyler is a visual instructor for the Madison Scouts Drum and Bugle Corps, as well as the former high school band director for Luverne High School (MN). Having graduated from the University of Minnesota Duluth, under the instruction of Dr. Scott Belck and Dr. Tom Muehlenbeck-Pfotenauer, Tyler’s marching experience includes three years as a member of the Madison Scouts Drum and Bugle Corps. He has been a marching instructor for the UMD Bulldog Marching Band, the Crossmen Drum and Bugle Corps, and is currently working with the Madison Scouts.'
       },
       {
         name: 'Bobby Bonslater',
         tags: ['Battery', 'Visual'],
         position: 'Cymbal Tech',
-        picture: '/images/bobbybonslater.png',
+        picture: '/images/bobbybonslater.jpg',
         bio: 'Bobby Bonslater began his marching arts career in 2001 playing baritone for Racine Scouts Drum and Bugle Corps. He advanced to become the Trumpet Soloist for the 2004 DCI Midwest Div III Champions, Americanos Drum and Bugle Corps, the 2005 DCI Division II/III Grand Champion, East Coast Jazz Drum and Bugle Corps and the Madison Scouts Drum and Bugle Corps, where he aged out in 2007. Bobby continued to march at the all-age competitive level with the 3-time DCA World Champions, Govenaires Drum and Bugle Corps, while serving as Program Coordinator for the Racine Scouts who performed twice as DCI Open Class Semi-finalist under his leadership. In addition to his extensive Drum Corps background, Bobby marched Cymbals for Americanos and Pioneer Indoor Percussion Ensembles earning two WGI World Championships. This will be Bobby\'s first year back with Pioneer Indoor. Bobby is currently working with Maine West High School of Des Plaines, IL as Percussion Instructor and Show Designer, Shadow Armada of Oregon, WI as Visual Coordinator/Woodwind Tech and the Govenaires of St. Peter, MN as Brass Caption head.'
     }]
 });
