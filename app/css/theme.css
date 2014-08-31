@@ -1,5 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
+.about-me {
+  padding: 40px;
+  background: rgba(0, 0, 0, .65);
+  font-size: 20px;
+  font-family: georgia;
+  font-style: italic;
+}
+
+
 body {
   min-height: 2000px;
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica';
@@ -175,7 +184,6 @@ body .jumbotron .container .fus-pitch {
 }
 
 body .jumbotron .container .fus-pitch h1 {
-  font-weight: 100;
   font-size: 46px;
   line-height: 120%;
   margin: 0 0 5px 0;
@@ -246,7 +254,6 @@ body .fus-btns .btn {
 
 .fus-section .fus-section-header h3, .fus-section .fus-header h3 {
  font-size: 36px;
- font-weight: 100;
  line-height: 120%;
  margin: 0 0 5px 0;
 }
@@ -301,7 +308,7 @@ body .fus-btns .btn {
 }
 
 .fus-tabs li.active a .glyphicon {
-  color: white;
+  color: black;
   background: #3A92D7;
   border-color: #3A92D7;
 }
@@ -316,11 +323,11 @@ body .fus-btns .btn {
   outline: none;
 }
 .fus-tabs li a .glyphicon {
-  color: white;
+  color: black;
   font-size: 20px;
   padding: 15px;
   line-height: 100%;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 50px;
   -o-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -339,7 +346,7 @@ body .fus-btns .btn {
   display: block;
   font-size: 12px;
   margin-top: 10px;
-  color: white;
+  color: black;
 }
 
 .fus-faq {
