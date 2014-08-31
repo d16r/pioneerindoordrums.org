@@ -423,6 +423,10 @@ footer {
   text-align: center;
 }
 
+.staff-info {
+  margin-bottom: 20px;
+}
+
 /* Black */
 body.fus-black .fus-overlay, body.fus-black .fus-tabs li.active a .glyphicon {
   background: #333;
