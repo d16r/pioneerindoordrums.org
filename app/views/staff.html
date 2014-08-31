@@ -31,7 +31,7 @@
 <script type="text/ng-template" id="staffModal.html">
     <div class="modal-header">
         <button type="button" class="close" ng-click="$close()">&times;</button>
-        <h4 class="staff-name">{{ name }} - {{ position }}</h4>
+        <h3 class="staff-name">{{ name }} <small>{{ position }}</small></h3>
     </div>
     <div class="modal-body">
         <p class="staff-bio" ng-bind-html="bio | markdown"></p>
