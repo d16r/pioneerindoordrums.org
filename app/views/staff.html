@@ -14,11 +14,11 @@
         </ul><br /><br />
 
         <div class="row">
-            <div class="col-md-3 col-sm-6 staff-info" ng-repeat="member in staffMembers | filter:search:strict">
+            <div class="col-md-3 col-md-offset-0 col-sm-5 col-sm-offset-1 staff-info" ng-repeat="member in staffMembers | filter:search:strict">
               <div class="">
                 <a href="" ng-click="showStaffModal(member.name, member.position, member.bio)"><img class="img-responsive img-circle" width="220" height="220" src="{{ member.picture }}"></a>
                 <div>
-                  <h3><a href="" ng-click="showStaffModal(member.name, member.position, member.bio)">{{ member.name }}</a></h3> {{member.position}}
+                  <h4><a href="" ng-click="showStaffModal(member.name, member.position, member.bio)">{{ member.name }}</a></h4> {{member.position}}
                 </div>
               </div>
             </div>

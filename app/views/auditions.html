@@ -8,11 +8,11 @@
             <div ng-show="registrationComplete" class="alert alert-success">Congratulations! You are all registered. See you at auditions!</div>
             <form ng-hide="registrationComplete" novalidate ng-submit="submitAuditionForm()" name="form">
                 <div class="row">
-                    <div class="col-md-5 col-sm-5 col-xs-5 form-group" ng-class="{ 'has-error': form.firstName.$invalid && !form.firstName.$pristine }">
+                    <div class="col-md-5 col-sm-5 col-xs-6 form-group" ng-class="{ 'has-error': form.firstName.$invalid && !form.firstName.$pristine }">
                         <label class="control-label" for="firstName">First Name *</label>
                         <input type="text" class="form-control" name="firstName" ng-model="auditionee.firstName" ng-minLength="2" required />
                     </div>
-                    <div class="col-md-7 col-sm-7 col-xs-7 form-group" ng-class="{ 'has-error': form.lastName.$invalid && !form.lastName.$pristine }">
+                    <div class="col-md-7 col-sm-7 col-xs-6 form-group" ng-class="{ 'has-error': form.lastName.$invalid && !form.lastName.$pristine }">
                         <label class="control-label" for="lastName">Last Name *</label>
                         <input type="text" class="form-control" name="lastName" ng-model="auditionee.lastName" ng-minLength="2" required />
                     </div>
