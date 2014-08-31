@@ -462,6 +462,11 @@ body.fus-black .navbar.fus-navbar-solid {
   .container {
     width: 100%;
   }
+
+  body .jumbotron .container .fus-pitch h1 {
+    font-size: 40px;
+  }
+
   body .jumbotron .fus-bg {
     position: absolute;
   }
@@ -473,19 +478,7 @@ body.fus-black .navbar.fus-navbar-solid {
     background: url("../images/scary.jpeg") center center no-repeat;
     background-size: cover;
   }
-}
 
-@media (max-width: 500px) {
-  body .fus-tab-content > .tab-pane > .row > [class*="col-"].fus-photo img {
-    width: 100%;
-  }
-
-  body #select-options li:first-child {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
   body .navbar-collapse {
     background: rgba(58, 146, 215, 0.87);
   }
@@ -497,6 +490,20 @@ body.fus-black .navbar.fus-navbar-solid {
   }
   .container {
     width: 100%;
+  }
+
+  .about-me {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  body .fus-tab-content > .tab-pane > .row > [class*="col-"].fus-photo img {
+    width: 100%;
+  }
+
+  body #select-options li:first-child {
+    display: none;
   }
 }
 
