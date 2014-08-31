@@ -1,5 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
+
+.admin {
+  color: black;
+}
+
+.modal {
+  color: black;
+}
+
 .about-me {
   padding: 40px;
   background: rgba(0, 0, 0, .75);
@@ -21,7 +30,6 @@
   text-decoration: underline;
   color: white;
 }
-
 
 body {
   min-height: 2000px;
