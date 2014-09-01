@@ -6,10 +6,10 @@
         </div>
 
         <div class="row">
-            <div ng-repeat="faq in faqs" class="col-md-4 col-sm-6 col-xs-12">
+            <div ng-repeat="faq in faqs" class="col-md-6 col-sm-6 col-xs-12">
                 <div class="faq-question">
-                    <h3>{{ faq.question }}</h3><br />
-                    <p ng-bind-html="faq.answer | markdown"></p>
+                    <h3>{{ faq.question }}</h3>
+                    <p class="faq-answer" ng-bind-html="faq.answer | markdown"></p>
                 </div>
             </div>
         </div>

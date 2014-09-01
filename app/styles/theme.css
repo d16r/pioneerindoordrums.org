@@ -40,6 +40,10 @@ body.fus-black .fus-overlay, body.fus-black .fus-tabs li.active a .glyphicon {
   color: black;
 }
 
+.faq-answer {
+  margin-top: 10px;
+}
+
 .payment th {
   text-align: center;
 }
@@ -286,7 +290,6 @@ body .fus-btns .btn {
     background: rgba(0, 0, 0, .75);
     padding: 1px 15px 10px;
     margin-top: 10px;
-    height: 220px;
 }
 
 .fus-section, .fus-section > .container {
