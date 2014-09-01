@@ -14,7 +14,7 @@ var app = angular.module('pioApp', ['ngCookies',
 app.config(function ($routeProvider, $httpProvider) {
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
-    
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html'
@@ -26,11 +26,14 @@ app.config(function ($routeProvider, $httpProvider) {
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
+      .when('/payment', {
+        templateUrl: 'views/payment.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
   });
-  
+
 app.run(function ($location, $rootScope, Auth) {
     $rootScope.$on( "$routeChangeStart", function(event, next, current) {
         if (next.templateUrl == 'views/admin.html') {
