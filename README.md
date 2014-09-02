@@ -15,3 +15,9 @@ To run the application, simply type:
 ```
 grunt serve
 ```
+
+### Deploy
+In the root directory, type:
+```
+firebase deploy
+```
